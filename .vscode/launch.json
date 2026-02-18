@@ -8,14 +8,17 @@
             "name": "Cortex Debug (OpenOCD STM)",
             "type": "cortex-debug",
             "request": "launch",
+            "runToEntryPoint": "main",
             "servertype": "openocd",
+            "serverpath": "D:/openocd/bin/openocd.exe",
+            //"device": "STM32G474RE",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/build/strain_gauge_sensor.elf",
+            "executable": "${workspaceRoot}/build/Debug/strain_gauge_sensor.elf",
             "configFiles": [
                 "interface/stlink.cfg",
                 "target/stm32wbx.cfg"
             ],
-            "serverpath": "D:/openocd/bin/openocd.exe"
+            "svdFile": "${workspaceRoot}/svd/STM32G474xx.svd",
         }
     ]
 }
