@@ -66,3 +66,13 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+
+set(HEX_OUTPUT_DIR ${CMAKE_SOURCE_DIR}/exe)
+
+add_custom_command(TARGET strain_gauge_sensor
+    POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O ihex
+            $<TARGET_FILE:strain_gauge_sensor>
+            ${HEX_OUTPUT_DIR}/strain_gauge_sensor.hex
+    COMMENT "Generating HEX file"
+)
