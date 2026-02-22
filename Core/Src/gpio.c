@@ -37,8 +37,6 @@
      PC5   ------> ADC2_IN11
      PB0   ------> ADC1_IN15
      PB1   ------> ADC1_IN12
-     PA9   ------> USART1_TX
-     PA10   ------> USART1_RX
 */
 void MX_GPIO_Init(void)
 {
@@ -138,14 +136,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PA9 PA10 */
-  GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pin : MULTI5_E_Pin */
   GPIO_InitStruct.Pin = MULTI5_E_Pin;
