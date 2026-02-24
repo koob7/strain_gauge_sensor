@@ -27,7 +27,13 @@
 /* USER CODE BEGIN Includes */
 #include "cstring"
 #include <optional>
+#include <type_traits>
 #include <utility>
+#include <vector>
+
+#include "scheduler.h"
+#include "serializer.h"
+#include "usart_control.h"
 
 /* USER CODE END Includes */
 
@@ -63,180 +69,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-class usart_control_t
-{
-  private:
-    static constexpr uint16_t BUFFER_SIZE = 100;
-    static constexpr uint64_t TIMEOUT_TRUST_FACTOR = 12;
-    static constexpr uint64_t DIVIDER_HELPER_FACTOR = 1000000;
-    static constexpr uint64_t TIMEOUT_TRUST_DIVIDER = 10;
-    static constexpr uint64_t USART_START_BITS = 1;
-    uint16_t timeout_ms = 0;
-
-    uint8_t tx_buffer[BUFFER_SIZE];
-    uint8_t rx_buffer[BUFFER_SIZE];
-
-    UART_HandleTypeDef *huart;
-    DMA_HandleTypeDef *hdma_rx;
-    DMA_HandleTypeDef *hdma_tx;
-
-    bool data_received;
-    bool initiated = false;
-
-  public:
-    explicit usart_control_t() {}
-
-    explicit usart_control_t(UART_HandleTypeDef *uart) : huart(uart)
-    {
-        if (uart == nullptr)
-            Error_Handler();
-
-        if (uart->hdmarx == nullptr || uart->hdmatx == nullptr)
-            Error_Handler();
-
-        hdma_rx = uart->hdmarx;
-        hdma_tx = uart->hdmatx;
-
-        uint64_t word_length;
-
-        switch (uart->Init.WordLength)
-        {
-        case UART_WORDLENGTH_9B:
-            word_length = 9;
-            break;
-        case UART_WORDLENGTH_8B:
-            word_length = 8;
-            break;
-        case UART_WORDLENGTH_7B:
-            word_length = 7;
-            break;
-        default:
-            Error_Handler();
-        }
-
-        uint64_t stop_bits;
-
-        switch (uart->Init.StopBits)
-        {
-        case UART_STOPBITS_0_5:
-        case UART_STOPBITS_1:
-            stop_bits = 1.0;
-            break;
-
-        case UART_STOPBITS_1_5:
-        case UART_STOPBITS_2:
-            stop_bits = 2;
-            break;
-
-        default:
-            Error_Handler();
-        }
-
-        uint64_t parity_bits = uart->Init.Parity == UART_PARITY_NONE ? 0 : 1;
-
-        timeout_ms = static_cast<uint16_t>(DIVIDER_HELPER_FACTOR / uart->Init.BaudRate * BUFFER_SIZE *
-                                           (USART_START_BITS + word_length + parity_bits + stop_bits) *
-                                           TIMEOUT_TRUST_FACTOR / DIVIDER_HELPER_FACTOR / TIMEOUT_TRUST_DIVIDER);
-
-        data_received = false;
-        initiated = true;
-    }
-
-    bool check_initiated() { return initiated; }
-
-    void dma_rx_irq(UART_HandleTypeDef *irq_huart)
-    {
-        if (irq_huart != huart)
-        {
-            return;
-        }
-
-        data_received = true;
-    }
-
-    void dma_tx_irq(UART_HandleTypeDef *irq_huart)
-    {
-        if (irq_huart != huart)
-        {
-            return;
-        }
-    }
-
-    bool send_frame(const char *text)
-    {
-
-        uint32_t start = HAL_GetTick();
-
-        while (huart->gState != HAL_UART_STATE_READY)
-        {
-            if ((HAL_GetTick() - start) >= timeout_ms)
-            {
-                return false;
-            }
-        }
-
-        size_t len = strlen(text);
-
-        if (len == 0 || len > BUFFER_SIZE)
-            return false;
-
-        memcpy(tx_buffer, text, len);
-
-        if (HAL_UART_Transmit_DMA(huart, tx_buffer, len) != HAL_OK)
-            return false;
-
-        return true;
-    }
-
-    bool receive_frame()
-    {
-
-        uint32_t start = HAL_GetTick();
-        data_received = 0;
-        while (huart->RxState != HAL_UART_STATE_READY)
-        {
-            if ((HAL_GetTick() - start) >= timeout_ms)
-            {
-                return false;
-            }
-        }
-
-        if (HAL_UARTEx_ReceiveToIdle_DMA(huart, rx_buffer, BUFFER_SIZE) != HAL_OK)
-        {
-            return false;
-        }
-
-        return true;
-    }
-
-    std::optional<std::pair<uint8_t *, uint8_t>> read_frame()
-    {
-        if (huart->RxState != HAL_UART_STATE_READY)
-        {
-            return std::nullopt;
-        }
-
-        if (!data_received)
-        {
-            return std::nullopt;
-        }
-
-        uint32_t remaining;
-        uint32_t received;
-
-        remaining = __HAL_DMA_GET_COUNTER(huart->hdmarx);
-        received = BUFFER_SIZE - remaining;
-
-        if (received == 0 || received > 100)
-            return std::nullopt;
-
-        return std::make_optional(std::make_pair(rx_buffer, received));
-    }
-
-    bool check_data_ready() { return data_received; }
-};
-
-usart_control_t user_messenger;
 /* USER CODE END 0 */
 
 /**
@@ -277,7 +109,19 @@ int main(void)
     MX_USART1_UART_Init();
     /* USER CODE BEGIN 2 */
 
-    user_messenger = usart_control_t(&huart1);
+    static usart_control_t usart_control_instance(device_t::module_id_t::USER_MESSENGER, &huart1);
+    g_usart_control = &usart_control_instance;
+
+    static scheduler_t scheduler_instance(device_t::module_id_t::SCHEDULER);
+    g_scheduler = &scheduler_instance;
+
+    static serializer_t serializer_instance(device_t::module_id_t::SERIALIZER);
+    g_serializer = &serializer_instance;
+
+    for (uint8_t i = 0; i < static_cast<uint8_t>(device_t::module_id_t::MODULE_NUMBER); i++)
+    {
+        g_device_modules[i]->init();
+    }
 
     /* USER CODE END 2 */
 
@@ -343,9 +187,9 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-void HAL_UARTEx_TxEventCallback(UART_HandleTypeDef *huart) { user_messenger.dma_tx_irq(huart); }
+void HAL_UARTEx_TxEventCallback(UART_HandleTypeDef *huart) { g_usart_control->dma_tx_irq(huart); }
 
-void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart) { user_messenger.dma_rx_irq(huart); }
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart) { g_usart_control->dma_rx_irq(huart); }
 
 /* USER CODE END 4 */
 
@@ -358,9 +202,9 @@ void Error_Handler(void)
     /* USER CODE BEGIN Error_Handler_Debug */
     /* User can add his own implementation to report the HAL error return state
      */
-    if (user_messenger.check_initiated())
+    if (g_usart_control->get_state() != state_t::READY)
     {
-        user_messenger.send_frame("Critical error, jump to error handler\n");
+        g_usart_control->send_frame("Critical error, jump to error handler\n");
     }
     __disable_irq();
     while (1)
