@@ -60,9 +60,10 @@ usart_control_t::usart_control_t(module_id_t id, UART_HandleTypeDef *uart) : dev
 
     uint64_t parity_bits = uart->Init.Parity == UART_PARITY_NONE ? 0 : 1;
 
-    timeout_ms = static_cast<uint16_t>(DIVIDER_HELPER_FACTOR / uart->Init.BaudRate * BUFFER_SIZE *
-                                       (USART_START_BITS + word_length + parity_bits + stop_bits) *
-                                       TIMEOUT_TRUST_FACTOR / DIVIDER_HELPER_FACTOR / TIMEOUT_TRUST_DIVIDER);
+    timeout_ms =
+        static_cast<uint16_t>(DIVIDER_HELPER_FACTOR / uart->Init.BaudRate * BUFFER_SIZE *
+                              (USART_START_BITS + word_length + parity_bits + stop_bits) * TIMEOUT_TRUST_FACTOR *
+                              MIN_TO_MS / DIVIDER_HELPER_FACTOR / TIMEOUT_TRUST_DIVIDER);
 
     data_received = false;
 }
