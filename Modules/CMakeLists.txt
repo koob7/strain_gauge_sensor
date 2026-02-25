@@ -9,6 +9,9 @@ add_library(modules STATIC
     Src/scheduler.cpp
     Src/serializer.cpp
     Src/usart_control.cpp
+    Src/adc.cpp
+    Src/adc_opamp.cpp
+    Src/hx711.cpp
 )
 
 target_include_directories(modules PUBLIC

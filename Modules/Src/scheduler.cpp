@@ -1,5 +1,7 @@
 #include "scheduler.h"
-#include "interface.h"
+#include "adc.h"
+#include "adc_opamp.h"
+#include "hx711.h"
 #include "usart_control.h"
 
 scheduler_t *g_scheduler = nullptr;
