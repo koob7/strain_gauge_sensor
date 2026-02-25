@@ -187,6 +187,8 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+extern "C" void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) { g_usart_control->dma_tx_irq(huart); }
+
 void HAL_UARTEx_TxEventCallback(UART_HandleTypeDef *huart) { g_usart_control->dma_tx_irq(huart); }
 
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart) { g_usart_control->dma_rx_irq(huart); }

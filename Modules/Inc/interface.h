@@ -20,7 +20,7 @@ class interface_t
     state_t state;
 
     interface_t() = delete;
-    interface_t(interface_id_t id) : interface_id(id), state(state_t::INIT) {}
+    interface_t(interface_id_t id) : interface_id(id), state(state_t::INIT) { register_interface(); }
 
     virtual bool init() = 0;
     virtual int32_t meassure(uint8_t param_1) = 0;
