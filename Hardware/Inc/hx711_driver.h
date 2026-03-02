@@ -5,7 +5,7 @@
 
 #pragma once
 
-class hx711_driver
+class hx711_driver_t
 {
 
     static constexpr uint32_t TIME_TO_SLEEP  = 65;  // time in us until hx711 enter power down mode when SCK is high
@@ -39,8 +39,8 @@ class hx711_driver
     };
     // clang-format on
 
-    explicit hx711_driver(gain_ranges_t gain_in, GPIO_TypeDef *data_line_port, uint16_t data_line_pin,
-                          GPIO_TypeDef *clock_line_port, uint16_t clock_line_pin)
+    explicit hx711_driver_t(gain_ranges_t gain_in, GPIO_TypeDef *data_line_port, uint16_t data_line_pin,
+                            GPIO_TypeDef *clock_line_port, uint16_t clock_line_pin)
         : data_line_port(data_line_port), data_line_pin(data_line_pin), clock_line_port(clock_line_port),
           clock_line_pin(clock_line_pin)
     {

@@ -1,4 +1,5 @@
 #include "multiplekser.h"
+#include "algorithm"
 #include "helper.h"
 
 multiplekser_t g_multipleksers[] = {multiplekser_t(multiplekser_t::multiplekser_name_t::BRIDGE_1),
@@ -14,12 +15,15 @@ bool multiplekser_t::deactivate_multiplekser()
     uint8_t devices_to_deinit = ceil_div(multiplekser_outputs, multiplekser_output_number);
     for (; devices_to_deinit--;)
     {
-        if (!config_pin_pointers(multiplekser_output_number * devices_to_deinit))
+        uint8_t calculated_channel = multiplekser_output_number * (devices_to_deinit + 1);
+        calculated_channel         = std::min(calculated_channel, multiplekser_outputs);
+        if (!config_pin_pointers(calculated_channel))
             return false;
 
         if (!safe_HALL_pin_set(enable_port, enable_pin, GPIO_PIN_SET))
             return false;
     }
+    return true;
 }
 
 /**
@@ -32,6 +36,8 @@ bool multiplekser_t::deactivate_multiplekser()
  */
 bool multiplekser_t::config_output_channel(uint8_t output_channel)
 {
+    if (output_channel == 0 || output_channel > multiplekser_outputs)
+        return false;
 
     if (!deactivate_multiplekser())
         return false;
@@ -47,6 +53,9 @@ bool multiplekser_t::config_output_channel(uint8_t output_channel)
 
 bool multiplekser_t::enable_multiplekser_output(uint8_t output_channel)
 {
+    if (output_channel == 0)
+        return false;
+
     uint8_t pin_switch     = (output_channel - 1) % multiplekser_output_number;
     GPIO_PinState s1_state = pin_switch & 0b0001 ? GPIO_PIN_RESET : GPIO_PIN_SET;
     GPIO_PinState s2_state = pin_switch & 0b0010 ? GPIO_PIN_RESET : GPIO_PIN_SET;
@@ -77,7 +86,7 @@ bool multiplekser_t::safe_HALL_pin_set(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, G
 
 bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
 {
-    if (output_channel > multiplekser_outputs)
+    if (output_channel > multiplekser_outputs || output_channel == 0)
     {
         return false;
     }

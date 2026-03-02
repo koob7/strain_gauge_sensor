@@ -12,11 +12,6 @@ uint8_t command_t::read_numberf_from_string(char *&ptr)
         ptr += strlen(BINARY_PREFIX);
         return static_cast<uint8_t>(strtoul(ptr, &ptr, 2));
     }
-    else if (memcmp(ptr, OCTET_PREFIX, strlen(OCTET_PREFIX)) == 0)
-    {
-        ptr += strlen(OCTET_PREFIX);
-        return static_cast<uint8_t>(strtoul(ptr, &ptr, 8));
-    }
     else if (memcmp(ptr, DECIMAL_PREFIX, strlen(DECIMAL_PREFIX)) == 0)
     {
         ptr += strlen(DECIMAL_PREFIX);
@@ -34,8 +29,8 @@ bool command_t::decode_frame(std::optional<std::pair<uint8_t *, uint8_t>> frame)
     }
 
     const char *base_ptr = reinterpret_cast<const char *>(frame.value().first);
-    char *frame_content = reinterpret_cast<char *>(frame.value().first);
-    uint8_t frame_size = frame.value().second;
+    char *frame_content  = reinterpret_cast<char *>(frame.value().first);
+    uint8_t frame_size   = frame.value().second;
 
     if (frame_content == nullptr)
     {

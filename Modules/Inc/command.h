@@ -13,7 +13,6 @@ class command_t
     const char *CMD_PREFIX     = "cmd";
     const char *HEX_PREFIX     = "0x";
     const char *BINARY_PREFIX  = "0b";
-    const char *OCTET_PREFIX   = "0";
     const char *DECIMAL_PREFIX = "";
 
   public:
@@ -41,6 +40,7 @@ class command_t
     {
         SCHEDULE_MEASUREMENT,
         EXECUTE_MEASUREMENTS,
+        SINGLE_MEASUREMENT,
         REMOVE_MEASUREMENT,
         REMOVE_ALL_MEASUREMENTS,
         SERIALIZE_COMMANDS,

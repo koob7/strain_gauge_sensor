@@ -153,6 +153,11 @@ int main(void)
             if (command.decode_frame(g_usart_control->read_frame()) == false)
                 goto finish_receiving;
 
+            for (uint8_t i = 0; i < static_cast<uint8_t>(device_t::module_id_t::MODULE_NUMBER); i++)
+            {
+                g_device_modules[i]->execute_command(command);
+            }
+
         finish_receiving:
 
             g_usart_control->receive_frame();

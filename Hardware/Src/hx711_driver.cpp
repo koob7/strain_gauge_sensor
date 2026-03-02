@@ -1,16 +1,16 @@
 #include "hx711_driver.h"
 #include "main.h"
 
-bool hx711_driver::is_ready()
+bool hx711_driver_t::is_ready()
 {
     // When the data line goes low, the sensor is ready for retrieval.
     return HAL_GPIO_ReadPin(data_line_port, data_line_pin) == 0;
 }
 
-bool hx711_driver::set_gain(gain_ranges_t gain_range)
+bool hx711_driver_t::set_gain(gain_ranges_t gain_range)
 {
 
-    if (gain >= as_int(gain_ranges_t::GAIN_RANGES_NUMBER))
+    if (as_int(gain_range) >= as_int(gain_ranges_t::GAIN_RANGES_NUMBER))
         return false;
 
     // we do not have to configure gain so making extra read
@@ -21,13 +21,15 @@ bool hx711_driver::set_gain(gain_ranges_t gain_range)
 
     gain = gain_sck_pulses[as_int(gain_range)];
 
-    power_up();
-    read();
-    power_down();
-    return true;
+    bool result = true;
+
+    result |= power_up();
+    result |= (read() != 0);
+    result |= power_down();
+    return result;
 }
 
-long hx711_driver::read()
+long hx711_driver_t::read()
 {
     uint32_t start = HAL_GetTick();
 
@@ -84,7 +86,7 @@ long hx711_driver::read()
     return (long)(value);
 }
 
-bool hx711_driver::power_down()
+bool hx711_driver_t::power_down()
 {
 
     HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_RESET);
@@ -95,7 +97,7 @@ bool hx711_driver::power_down()
     return !is_ready();
 }
 
-bool hx711_driver::power_up()
+bool hx711_driver_t::power_up()
 {
     HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_RESET);
 

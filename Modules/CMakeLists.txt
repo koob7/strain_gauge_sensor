@@ -19,6 +19,6 @@ target_include_directories(modules PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/Inc
 )
 
-target_link_libraries(modules PUBLIC stm32cubemx)
+target_link_libraries(modules PUBLIC stm32cubemx hardware)
 
 target_link_libraries(${CMAKE_PROJECT_NAME} modules)
