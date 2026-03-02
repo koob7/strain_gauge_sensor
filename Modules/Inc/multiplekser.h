@@ -1,5 +1,6 @@
 #include <cstdint>
 
+#include "helper.h"
 #include "main.h"
 
 #pragma once
@@ -7,15 +8,16 @@
 class multiplekser_t
 {
 
+  public:
     enum class multiplekser_name_t : uint8_t
     {
-        BRIDGE_1 = 0,
-        BRIDGE_2 = 1,
-        BRIDGE_3 = 2,
-        BRIDGE_4 = 3,
+        BRIDGE_1            = 0,
+        BRIDGE_2            = 1,
+        BRIDGE_3            = 2,
+        BRIDGE_4            = 3,
         MEASSURING_SOURCE_P = 4,
         MEASSURING_SOURCE_N = 5,
-        OPAMP_GAIN = 6,
+        OPAMP_GAIN          = 6,
 
         // must stay last
         MULTIPLEKSER_NUMBER,
@@ -38,14 +40,14 @@ class multiplekser_t
     const uint8_t multiplekser_outputs;
 
     // clang-format off
-    static constexpr uint8_t multiplekser_max_out_channel[static_cast<uint8_t>(multiplekser_name_t::MULTIPLEKSER_NUMBER)] = {
-        [static_cast<uint8_t>(multiplekser_name_t::BRIDGE_1)] = 16,
-        [static_cast<uint8_t>(multiplekser_name_t::BRIDGE_2)] = 8,
-        [static_cast<uint8_t>(multiplekser_name_t::BRIDGE_3)] = 8,
-        [static_cast<uint8_t>(multiplekser_name_t::BRIDGE_4)] = 8,
-        [static_cast<uint8_t>(multiplekser_name_t::MEASSURING_SOURCE_P)] = 3,
-        [static_cast<uint8_t>(multiplekser_name_t::MEASSURING_SOURCE_N)] = 3,
-        [static_cast<uint8_t>(multiplekser_name_t::OPAMP_GAIN)] = 8,
+    static constexpr uint8_t multiplekser_max_out_channel[as_int(multiplekser_name_t::MULTIPLEKSER_NUMBER)] = {
+        [as_int(multiplekser_name_t::BRIDGE_1)]            = 16,
+        [as_int(multiplekser_name_t::BRIDGE_2)]            = 8,
+        [as_int(multiplekser_name_t::BRIDGE_3)]            = 8,
+        [as_int(multiplekser_name_t::BRIDGE_4)]            = 8,
+        [as_int(multiplekser_name_t::MEASSURING_SOURCE_P)] = 3,
+        [as_int(multiplekser_name_t::MEASSURING_SOURCE_N)] = 3,
+        [as_int(multiplekser_name_t::OPAMP_GAIN)]          = 8,
     };
     // clang-format on
 
@@ -77,3 +79,5 @@ class multiplekser_t
 
     bool safe_HALL_pin_set(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
 };
+
+extern multiplekser_t g_multipleksers[as_int(multiplekser_t::multiplekser_name_t::MULTIPLEKSER_NUMBER)];
