@@ -4,13 +4,13 @@
 
 #pragma once
 
-template <typename T> constexpr T ceil_div(T a, T b)
+template <typename T> inline constexpr T ceil_div(T a, T b)
 {
     static_assert(std::is_integral_v<T>, "T must be integral");
     return (a + b - 1) / b;
 }
 
-template <typename Enum> constexpr std::underlying_type_t<Enum> as_int(Enum e) noexcept
+template <typename Enum> inline constexpr std::underlying_type_t<Enum> as_int(Enum e) noexcept
 {
     return static_cast<std::underlying_type_t<Enum>>(e);
 }
@@ -18,7 +18,7 @@ template <typename Enum> constexpr std::underlying_type_t<Enum> as_int(Enum e) n
 static uint32_t cycles_per_us;
 static uint32_t max_delay_us;
 
-void init_dwt()
+inline void init_dwt()
 {
     CoreDebug->DEMCR = CoreDebug->DEMCR | CoreDebug_DEMCR_TRCENA_Msk;
     DWT->CYCCNT      = 0;
@@ -28,7 +28,7 @@ void init_dwt()
     max_delay_us  = 0xFFFFFFFF / cycles_per_us;
 }
 
-void delay_us(uint32_t us)
+inline void delay_us(uint32_t us)
 {
     if (us > max_delay_us)
         us = max_delay_us;
@@ -42,4 +42,4 @@ void delay_us(uint32_t us)
         ;
 }
 
-uint32_t micros() { return DWT->CYCCNT / cycles_per_us; }
+inline uint32_t get_dwt_micros() { return DWT->CYCCNT / cycles_per_us; }
