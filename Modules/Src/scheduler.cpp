@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include <type_traits>
 
-#include "adc.h"
 #include "adc_opamp.h"
+#include "d_adc.h"
 #include "helper.h"
 #include "hx711.h"
 #include "multiplekser.h"
 #include "scheduler.h"
 #include "usart_control.h"
+
 
 scheduler_t *g_scheduler = nullptr;
 
