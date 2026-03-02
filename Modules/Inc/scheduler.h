@@ -1,16 +1,20 @@
+#include <list>
+
+#include "command.h"
 #include "device.h"
 
 #pragma once
 
 class scheduler_t : public device_t
 {
-    // std::vector<command_t> command_list;
+    std::list<command_t> scheduled_commands;
 
   public:
     scheduler_t(module_id_t id) : device_t(id) {}
 
-    void init() override;
+    bool init() override;
 
-    void handle() {}
+    void handle() override {}
+    bool execute_command(command_t command) override;
 };
 extern scheduler_t *g_scheduler;
