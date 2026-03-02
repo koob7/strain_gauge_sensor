@@ -14,6 +14,7 @@
             "includePath": [
                 "${workspaceFolder}/Core/Inc",
                 "${workspaceFolder}/Modules/Inc",
+                "${workspaceFolder}/Hardware/Inc",
                 "${workspaceFolder}/Drivers/STM32G4xx_HAL_Driver/Inc",
                 "${workspaceFolder}/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy",
                 "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32G4xx/Include",

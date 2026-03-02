@@ -1,9 +1,13 @@
-#include "usart_control.h"
+#include <cstdarg>
+#include <cstdio>
+
 #include "types.h"
+#include "usart_control.h"
 
 usart_control_t *g_usart_control = nullptr;
 
-usart_control_t::usart_control_t(module_id_t id, UART_HandleTypeDef *uart) : device_t(id), huart(uart)
+usart_control_t::usart_control_t(module_id_t id, UART_HandleTypeDef *uart)
+    : device_t(id), huart(uart), data_received(false), is_receiving(false)
 {
     state = state_t::INIT;
     if (uart == nullptr)
@@ -68,16 +72,18 @@ usart_control_t::usart_control_t(module_id_t id, UART_HandleTypeDef *uart) : dev
     data_received = false;
 }
 
-void usart_control_t::init()
+bool usart_control_t::init()
 {
     if (state != state_t::INIT)
     {
         state = state_t::ERROR;
+        return false;
     }
     send_frame("Welcome from STM32G4\n");
     send_frame("In Straing Gauge sensor\n\n\n");
     send_frame("User messenger initiated\n");
     state = state_t::READY;
+    return true;
 }
 
 void usart_control_t::dma_rx_irq(UART_HandleTypeDef *irq_huart)
@@ -86,7 +92,7 @@ void usart_control_t::dma_rx_irq(UART_HandleTypeDef *irq_huart)
     {
         return;
     }
-
+    is_receiving = false;
     data_received = true;
 }
 
@@ -98,9 +104,8 @@ void usart_control_t::dma_tx_irq(UART_HandleTypeDef *irq_huart)
     }
 }
 
-bool usart_control_t::send_frame(const char *text)
+bool usart_control_t::send_frame(const char *format, ...)
 {
-
     uint32_t start = HAL_GetTick();
 
     while (huart->gState != HAL_UART_STATE_READY)
@@ -111,12 +116,14 @@ bool usart_control_t::send_frame(const char *text)
         }
     }
 
-    size_t len = strlen(text);
+    va_list args;
+    va_start(args, format);
 
-    if (len == 0 || len > BUFFER_SIZE)
+    uint16_t len = vsnprintf((char *)tx_buffer, BUFFER_SIZE, format, args);
+    va_end(args);
+
+    if (len < 0 || len >= BUFFER_SIZE)
         return false;
-
-    memcpy(tx_buffer, text, len);
 
     if (HAL_UART_Transmit_DMA(huart, tx_buffer, len) != HAL_OK)
         return false;
@@ -126,6 +133,7 @@ bool usart_control_t::send_frame(const char *text)
 
 bool usart_control_t::receive_frame()
 {
+    memset(rx_buffer, 0, sizeof(rx_buffer));
 
     uint32_t start = HAL_GetTick();
     data_received = 0;
@@ -142,6 +150,7 @@ bool usart_control_t::receive_frame()
         return false;
     }
 
+    is_receiving = true;
     return true;
 }
 
@@ -164,7 +173,9 @@ std::optional<std::pair<uint8_t *, uint8_t>> usart_control_t::read_frame()
     received = BUFFER_SIZE - remaining;
 
     if (received == 0 || received > 100)
+    {
+        receive_frame();
         return std::nullopt;
-
+    }
     return std::make_optional(std::make_pair(rx_buffer, received));
 }
