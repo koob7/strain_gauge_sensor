@@ -26,21 +26,23 @@ class usart_control_t : public device_t
     DMA_HandleTypeDef *hdma_tx;
 
     bool data_received;
+    bool is_receiving;
 
   public:
     explicit usart_control_t(module_id_t id, UART_HandleTypeDef *uart);
 
-    void init();
+    bool init() override;
     void handle() {}
 
     void dma_rx_irq(UART_HandleTypeDef *irq_huart);
     void dma_tx_irq(UART_HandleTypeDef *irq_huart);
 
-    bool send_frame(const char *text);
+    bool send_frame(const char *format, ...);
     bool receive_frame();
     std::optional<std::pair<uint8_t *, uint8_t>> read_frame();
 
     bool check_data_ready() { return data_received; }
+    bool check_receiving() { return is_receiving; }
 };
 
 extern usart_control_t *g_usart_control;
