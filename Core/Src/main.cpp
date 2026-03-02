@@ -18,11 +18,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "crc.h"
 #include "dma.h"
 #include "gpio.h"
 #include "opamp.h"
 #include "usart.h"
-#include <array>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -105,6 +105,7 @@ int main(void)
     MX_OPAMP1_Init();
     MX_OPAMP2_Init();
     MX_USART1_UART_Init();
+    MX_CRC_Init();
     /* USER CODE BEGIN 2 */
 
     init_dwt();
@@ -130,6 +131,9 @@ int main(void)
         Error_Handler();
     }
 
+    /* USER CODE END 2 */
+
+    /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1)
     {

@@ -73,10 +73,14 @@ void Error_Handler(void);
 #define MULTI8_S2_GPIO_Port GPIOC
 #define MULTI8_S3_Pin GPIO_PIN_1
 #define MULTI8_S3_GPIO_Port GPIOC
+#define HX711_DOUT_Pin GPIO_PIN_2
+#define HX711_DOUT_GPIO_Port GPIOC
 #define USER_BTN_Pin GPIO_PIN_3
 #define USER_BTN_GPIO_Port GPIOC
 #define USER_LED_Pin GPIO_PIN_0
 #define USER_LED_GPIO_Port GPIOA
+#define HX711_SCK_Pin GPIO_PIN_4
+#define HX711_SCK_GPIO_Port GPIOA
 #define ADC2_INP_Pin GPIO_PIN_4
 #define ADC2_INP_GPIO_Port GPIOC
 #define ADC2_INM_Pin GPIO_PIN_5
