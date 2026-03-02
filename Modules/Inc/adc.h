@@ -8,8 +8,8 @@ class adc_t : public interface_t
     const char *get_char_name() { return "adc"; }
 
   private:
-    bool wake_up_interface() override { return true; }
-    bool configure_interface(uint8_t param_1) override { return true; }
-    int32_t read_bridge_voltage() override { return 123; }
-    bool sleep_interface() override { return true; }
+    bool wake_up_interface() override;
+    bool configure_interface(uint8_t param_1) override;
+    int32_t read_bridge_voltage() override;
+    bool sleep_interface() override;
 };

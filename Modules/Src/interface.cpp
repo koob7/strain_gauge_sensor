@@ -29,14 +29,14 @@ int32_t interface_t::meassure(uint8_t param_1)
 
     result &= configure_interface(param_1);
 
+    if (!result)
+        return -1;
+
     uint32_t start = HAL_GetTick();
 
     while ((HAL_GetTick() - start) <= MULTIPLEKSER_VOLTAGE_STABLIZATION_TIME)
     {
     };
-
-    if (!result)
-        return -1;
 
     differential_voltage = read_bridge_voltage();
     result &= sleep_interface();
