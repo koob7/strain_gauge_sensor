@@ -18,11 +18,13 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "crc.h"
 #include "dma.h"
 #include "gpio.h"
 #include "opamp.h"
 #include "usart.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -106,6 +108,8 @@ int main(void)
     MX_OPAMP2_Init();
     MX_USART1_UART_Init();
     MX_CRC_Init();
+    MX_ADC1_Init();
+    MX_ADC2_Init();
     /* USER CODE BEGIN 2 */
 
     init_dwt();

@@ -32,11 +32,12 @@
 
 /* USER CODE END 1 */
 
-/** Configure pins
-     PC4   ------> ADC2_IN5
-     PC5   ------> ADC2_IN11
-     PB0   ------> ADC1_IN15
-     PB1   ------> ADC1_IN12
+/** Configure pins as
+        * Analog
+        * Input
+        * Output
+        * EVENT_OUT
+        * EXTI
 */
 void MX_GPIO_Init(void)
 {
@@ -113,18 +114,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : ADC2_INP_Pin ADC2_INM_Pin */
-  GPIO_InitStruct.Pin = ADC2_INP_Pin|ADC2_INM_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : ADC1_INM_Pin ADC1_INP_Pin */
-  GPIO_InitStruct.Pin = ADC1_INM_Pin|ADC1_INP_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : MULTI1_E_Pin MULTI1_S1_Pin MULTI1_S2_Pin MULTI1_S3_Pin
                            MULTI2_E_Pin MULTI5_S1_Pin MULTI5_S2_Pin MULTI5_S3_Pin
