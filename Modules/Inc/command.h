@@ -59,6 +59,9 @@ class command_t
                                  std::underlying_type_t<decltype(command_code_t::SCHEDULE_MEASUREMENT)>>,
                   "Typ elementu parameters i enum command_code_t nie zgadza się!");
 
+    static constexpr command_code_t internal_command[]{command_code_t::SAVE_COMMAND_TO_FLASH};
+    static constexpr uint8_t num_of_internal_command = sizeof(internal_command) / sizeof(internal_command[0]);
+
     command_t() { memset(parameters, 0, sizeof(parameters)); }
     command_t(const command_t &command) { memcpy(parameters, command.parameters, sizeof(parameters)); }
 

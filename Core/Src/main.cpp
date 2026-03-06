@@ -159,12 +159,33 @@ int main(void)
                 goto finish_receiving;
             }
 
+            for (uint8_t i = 0; i < command_t::num_of_internal_command; i++)
+            {
+                if (as_int(command_t::internal_command[i]) ==
+                    command.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)])
+                {
+                    goto finish_receiving;
+                }
+            }
+
             for (uint8_t i = 0; i < static_cast<uint8_t>(device_t::module_id_t::MODULE_NUMBER); i++)
             {
                 result |= g_device_modules[i]->execute_command(command);
             }
 
         finish_receiving:
+
+            if (result)
+            {
+                uint32_t start = HAL_GetTick();
+
+                while (HAL_GetTick() < start + 100)
+                {
+                    HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
+                }
+                HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_SET);
+            }
+
             g_usart_control->send_frame("Command executed with result: %d\n", result);
             g_usart_control->receive_frame();
         }
