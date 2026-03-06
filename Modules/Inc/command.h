@@ -10,10 +10,10 @@
 class command_t
 {
 
-    const char *CMD_PREFIX     = "cmd";
-    const char *HEX_PREFIX     = "0x";
-    const char *BINARY_PREFIX  = "0b";
-    const char *DECIMAL_PREFIX = "";
+    static constexpr const char *CMD_PREFIX     = "cmd";
+    static constexpr const char *HEX_PREFIX     = "0x";
+    static constexpr const char *BINARY_PREFIX  = "0b";
+    static constexpr const char *DECIMAL_PREFIX = "";
 
   public:
     // This enum represent most common and frequenty used layout of command parameters. There is no obstacle to use
@@ -38,14 +38,16 @@ class command_t
 
     enum class command_code_t : parameters_type
     {
-        SCHEDULE_MEASUREMENT,
-        EXECUTE_MEASUREMENTS,
-        SINGLE_MEASUREMENT,
-        REMOVE_MEASUREMENT,
-        REMOVE_ALL_MEASUREMENTS,
-        SERIALIZE_COMMANDS,
-        RESTORE_SERIALIZED_COMMANDS,
-        REMOVE_SERIALIZED_COMMANDS,
+        SCHEDULE_MEASUREMENT          = 0,
+        EXECUTE_MEASUREMENTS          = 1,
+        SINGLE_MEASUREMENT            = 2,
+        REMOVE_MEASUREMENT            = 3,
+        REMOVE_SCHEDULED_MEASUREMENTS = 4,
+        SERIALIZE_COMMANDS            = 5,
+        SAVE_COMMAND_TO_FLASH         = 6, // private
+        RESTORE_SERIALIZED_COMMANDS   = 7,
+        ERASE_FLASH                   = 8,
+        PRINT_SCHEDULED_COMMANDS      = 9,
     };
 
     // dummy static assert, just to learn something and enjoy coding
@@ -63,4 +65,9 @@ class command_t
     uint8_t read_numberf_from_string(char *&ptr);
 
     bool decode_frame(std::optional<std::pair<uint8_t *, uint8_t>> frame);
+
+    [[nodiscard]] uint8_t *get_parameters_pointer() { return parameters; }
+    [[nodiscard]] static uint8_t get_parameters_size() { return sizeof(parameters); }
+    void print_as_dafult_layout();
+    void print_as_plain_parameters();
 };

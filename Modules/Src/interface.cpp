@@ -59,7 +59,7 @@ bool interface_t::connect_interface()
     return result;
 }
 
-void interface_t::single_measurement(command_t command)
+bool interface_t::single_measurement(command_t command)
 {
     using layout_t = command_t::default_command_layout_t;
     using name_t   = multiplekser_t::multiplekser_name_t;
@@ -69,7 +69,7 @@ void interface_t::single_measurement(command_t command)
     if (command.parameters[as_int(layout_t::INTERFACE)] >= as_int(interface_t::interface_id_t::INTERFACE_NUMBER))
     {
         g_usart_control->send_frame("Measurement failed, wrong interface\n");
-        return;
+        return false;
     }
 
     result &=
@@ -84,7 +84,7 @@ void interface_t::single_measurement(command_t command)
     if (!result)
     {
         g_usart_control->send_frame("Measurement failed, wrong bridge configuration\n");
-        return;
+        return false;
     }
 
     int32_t differential_voltage = g_interfaces[command.parameters[as_int(layout_t::INTERFACE)]]->meassure(
@@ -107,4 +107,5 @@ void interface_t::single_measurement(command_t command)
     measurement_result_message += "\n";
 
     g_usart_control->send_frame(measurement_result_message.c_str());
+    return true;
 }

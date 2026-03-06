@@ -9,7 +9,6 @@
 #include "scheduler.h"
 #include "usart_control.h"
 
-
 scheduler_t *g_scheduler = nullptr;
 
 bool scheduler_t::init()
@@ -53,7 +52,7 @@ bool scheduler_t::execute_command(command_t command)
             return false;
         }
         scheduled_commands.push_back(command);
-        break;
+        return true;
     }
 
     case as_int(code_t::REMOVE_MEASUREMENT):
@@ -68,50 +67,68 @@ bool scheduler_t::execute_command(command_t command)
         std::advance(element_0, command.parameters[1]);
 
         scheduled_commands.erase(element_0);
-        break;
+        return true;
     }
 
-    case as_int(code_t::REMOVE_ALL_MEASUREMENTS):
+    case as_int(code_t::REMOVE_SCHEDULED_MEASUREMENTS):
     {
         scheduled_commands.clear();
-        break;
+        return true;
     }
 
     case as_int(code_t::EXECUTE_MEASUREMENTS):
     {
+        bool result = true;
         for (std::list<command_t>::iterator it = scheduled_commands.begin(); it != scheduled_commands.end(); ++it)
         {
-            interface_t::single_measurement(*it);
+            result |= interface_t::single_measurement(*it);
         }
 
-        break;
+        return result;
+    }
+
+    case (as_int(code_t::PRINT_SCHEDULED_COMMANDS)):
+    {
+        for (std::list<command_t>::iterator it = scheduled_commands.begin(); it != scheduled_commands.end(); ++it)
+        {
+            it->print_as_plain_parameters();
+        }
+        return true;
     }
 
     case as_int(code_t::SINGLE_MEASUREMENT):
     {
-        interface_t::single_measurement(command);
-
-        break;
+        return interface_t::single_measurement(command);
     }
 
     case as_int(code_t::SERIALIZE_COMMANDS):
     {
-        break;
-    }
+        bool result = true;
+        if (command.parameters[1] == 1)
+        {
+            command_t clear_flash;
+            clear_flash.parameters[as_int(layout_t::COMMAND_ID)] = as_int(code_t::ERASE_FLASH);
 
-    case as_int(code_t::RESTORE_SERIALIZED_COMMANDS):
-    {
-        break;
-    }
+            result |= g_device_modules[as_int(device_t::module_id_t::SERIALIZER)]->execute_command(clear_flash);
+        }
 
-    case as_int(code_t::REMOVE_SERIALIZED_COMMANDS):
-    {
-        break;
+        if (!result)
+        {
+            return result;
+        }
+
+        for (std::list<command_t>::iterator it = scheduled_commands.begin(); it != scheduled_commands.end(); ++it)
+        {
+            (*it).parameters[as_int(layout_t::COMMAND_ID)] = as_int(code_t::SAVE_COMMAND_TO_FLASH);
+            result |= g_device_modules[as_int(device_t::module_id_t::SERIALIZER)]->execute_command(*it);
+        }
+
+        return result;
     }
 
     default:
         return false;
     }
 
-    return true;
+    return false;
 }

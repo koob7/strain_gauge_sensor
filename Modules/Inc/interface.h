@@ -11,9 +11,9 @@ class interface_t
   public:
     enum class interface_id_t : uint8_t
     {
-        HX711,
-        ADC_OPAMP,
-        ADC,
+        HX711     = 0,
+        ADC_OPAMP = 1,
+        ADC       = 2,
 
         // must be last
         INTERFACE_NUMBER,
@@ -47,7 +47,7 @@ class interface_t
     virtual bool sleep_interface()                    = 0;
 
   public:
-    static void single_measurement(command_t command);
+    static bool single_measurement(command_t command);
 };
 
 extern interface_t *g_interfaces[static_cast<uint8_t>(interface_t::interface_id_t::INTERFACE_NUMBER)];

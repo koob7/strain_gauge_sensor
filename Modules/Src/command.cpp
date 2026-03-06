@@ -1,4 +1,6 @@
 #include "command.h"
+#include "helper.h"
+#include "usart_control.h"
 
 uint8_t command_t::read_numberf_from_string(char *&ptr)
 {
@@ -74,4 +76,28 @@ bool command_t::decode_frame(std::optional<std::pair<uint8_t *, uint8_t>> frame)
         frame_content += strlen(" ");
     }
     return true;
+}
+
+void command_t::print_as_dafult_layout()
+{
+    using layout_t = command_t::default_command_layout_t;
+
+    g_usart_control->send_frame("Commmand: ");
+    g_usart_control->send_frame("Command ID: %d ", parameters[as_int(layout_t::COMMAND_ID)]);
+    g_usart_control->send_frame("Interface: %d ", parameters[as_int(layout_t::INTERFACE)]);
+    g_usart_control->send_frame("Bridge 1: %d ", parameters[as_int(layout_t::BRIDGE_1)]);
+    g_usart_control->send_frame("Bridge 2: %d ", parameters[as_int(layout_t::BRIDGE_2)]);
+    g_usart_control->send_frame("Bridge 3: %d ", parameters[as_int(layout_t::BRIDGE_3)]);
+    g_usart_control->send_frame("Bridge 4: %d ", parameters[as_int(layout_t::BRIDGE_4)]);
+    g_usart_control->send_frame("Extra Param: %d\n", parameters[as_int(layout_t::EXTRA_PARAM)]);
+}
+
+void command_t::print_as_plain_parameters()
+{
+    g_usart_control->send_frame("Command parameters:");
+    for (uint8_t i = 0; i < as_int(command_t::default_command_layout_t::PARAMETERS_COUNT); i++)
+    {
+        g_usart_control->send_frame(" %d", parameters[i]);
+    }
+    g_usart_control->send_frame("\n");
 }

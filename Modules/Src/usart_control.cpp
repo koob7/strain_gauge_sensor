@@ -1,6 +1,7 @@
 #include <cstdarg>
 #include <cstdio>
 
+#include "helper.h"
 #include "types.h"
 #include "usart_control.h"
 
@@ -86,13 +87,23 @@ bool usart_control_t::init()
     return true;
 }
 
+bool usart_control_t::execute_command(command_t command)
+{
+    switch (command.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)])
+    {
+    default:
+        return false;
+    }
+    return false;
+}
+
 void usart_control_t::dma_rx_irq(UART_HandleTypeDef *irq_huart)
 {
     if (irq_huart != huart)
     {
         return;
     }
-    is_receiving = false;
+    is_receiving  = false;
     data_received = true;
 }
 
@@ -136,7 +147,7 @@ bool usart_control_t::receive_frame()
     memset(rx_buffer, 0, sizeof(rx_buffer));
 
     uint32_t start = HAL_GetTick();
-    data_received = 0;
+    data_received  = 0;
     while (huart->RxState != HAL_UART_STATE_READY)
     {
         if ((HAL_GetTick() - start) >= timeout_ms)
@@ -170,7 +181,7 @@ std::optional<std::pair<uint8_t *, uint8_t>> usart_control_t::read_frame()
     uint32_t received;
 
     remaining = __HAL_DMA_GET_COUNTER(huart->hdmarx);
-    received = BUFFER_SIZE - remaining;
+    received  = BUFFER_SIZE - remaining;
 
     if (received == 0 || received > 100)
     {

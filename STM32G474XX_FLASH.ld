@@ -53,10 +53,27 @@
 ENTRY(Reset_Handler)
 
 /* Specify the memory areas */
+
+FLASH_BASE = 0x08000000;
+
+PROVIDE(__flash_base = FLASH_BASE);
+
+
+/* WRONG - in dual mode page size is 2KB and 4KB i single mode */
+MEMORY_SIZE  = 512 * 1024;     /* bajty */
+USER_DATA_SIZE = 12 * 1024;    /* bajty */
+
 MEMORY
 {
-RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 128K
-FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 512K
+RAM (xrw) : ORIGIN = 0x20000000, LENGTH = 128K
+
+FLASH (rx) :
+    ORIGIN = FLASH_BASE,
+    LENGTH = MEMORY_SIZE - USER_DATA_SIZE
+
+USER_FLASH (rw) :
+    ORIGIN = FLASH_BASE + (MEMORY_SIZE - USER_DATA_SIZE),
+    LENGTH = USER_DATA_SIZE
 }
 
 /* Highest address of the user mode stack */
@@ -236,7 +253,13 @@ SECTIONS
     . = ALIGN(8);
   } >RAM
 
-
+.user_data (NOLOAD) :
+{
+    . = ALIGN(4);
+    __user_data_start = .;
+    . += USER_DATA_SIZE;
+    __user_data_end = .;
+} > USER_FLASH
 
   /* Remove information from the standard libraries */
   /DISCARD/ :
