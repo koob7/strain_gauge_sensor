@@ -69,6 +69,7 @@ bool scheduler_t::execute_command(command_t command)
 
     case as_int(code_t::SCHEDULE_MEASUREMENT):
     {
+        g_usart_control->send_frame("Scheduling measurement\n");
         if (command.parameters[as_int(layout_t::INTERFACE)] >= as_int(interface_t::interface_id_t::INTERFACE_NUMBER))
         {
             return false;
@@ -79,6 +80,8 @@ bool scheduler_t::execute_command(command_t command)
 
     case as_int(code_t::REMOVE_MEASUREMENT):
     {
+        g_usart_control->send_frame("Removing measurement with index: %d\n", command.parameters[1]);
+
         // here we do not use default layout so we have to manualy move between table blocks
         if (command.parameters[1] >= scheduled_commands.size())
         {
@@ -94,6 +97,7 @@ bool scheduler_t::execute_command(command_t command)
 
     case as_int(code_t::REMOVE_SCHEDULED_MEASUREMENTS):
     {
+        g_usart_control->send_frame("Removing all scheduled measurements\n");
         scheduled_commands.clear();
         return true;
     }
@@ -101,6 +105,8 @@ bool scheduler_t::execute_command(command_t command)
     case as_int(code_t::EXECUTE_MEASUREMENTS):
     {
         bool result = true;
+        g_usart_control->send_frame("Executing scheduled measurements for reference preassure: %d\n",
+                                    command.parameters[1]);
         for (std::list<command_t>::iterator it = scheduled_commands.begin(); it != scheduled_commands.end(); ++it)
         {
             result |= interface_t::single_measurement(*it);
@@ -111,6 +117,7 @@ bool scheduler_t::execute_command(command_t command)
 
     case (as_int(code_t::PRINT_SCHEDULED_COMMANDS)):
     {
+        g_usart_control->send_frame("Scheduled commands:\n");
         for (std::list<command_t>::iterator it = scheduled_commands.begin(); it != scheduled_commands.end(); ++it)
         {
             it->print_as_plain_parameters();
@@ -120,11 +127,13 @@ bool scheduler_t::execute_command(command_t command)
 
     case as_int(code_t::SINGLE_MEASUREMENT):
     {
+        g_usart_control->send_frame("Executing single measurement\n");
         return interface_t::single_measurement(command);
     }
 
     case as_int(code_t::SERIALIZE_COMMANDS):
     {
+        g_usart_control->send_frame("Serializing scheduled commands\n");
         bool result = true;
         if (command.parameters[1] == 1)
         {

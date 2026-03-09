@@ -3,7 +3,9 @@
 #include "helper.h"
 #include "main.h"
 #include "scheduler.h"
+#include "usart_control.h"
 #include <algorithm>
+
 
 serializer_t *g_serializer = nullptr;
 
@@ -65,6 +67,7 @@ bool serializer_t::execute_command(command_t command)
     {
     case as_int(code_t::SAVE_COMMAND_TO_FLASH):
     {
+        g_usart_control->send_frame("Saving command to flash\n");
         if (addres_to_store_next_command + flash_layout_t::layout_size >= flash_storage_addres_end)
             return false;
 
@@ -91,6 +94,7 @@ bool serializer_t::execute_command(command_t command)
 
     case as_int(code_t::RESTORE_SERIALIZED_COMMANDS):
     {
+        g_usart_control->send_frame("Restoring serialized commands\n");
         bool result = true;
 
         // if parameter 2 is equal to 1 then we remove already scheduled command
@@ -160,7 +164,7 @@ bool serializer_t::execute_command(command_t command)
 
     case as_int(code_t::ERASE_FLASH):
     {
-
+        g_usart_control->send_frame("Erasing flash\n");
         std::optional<std::pair<uint32_t, uint32_t>> flash_pages =
             calculate_pages_to_erase(flash_storage_addres_start, flash_storage_addres_end - 1);
 
