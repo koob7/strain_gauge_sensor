@@ -6,6 +6,7 @@
 
 class interface_t
 {
+  protected:
     static constexpr uint32_t MULTIPLEKSER_VOLTAGE_STABLIZATION_TIME = 100;
 
   public:
