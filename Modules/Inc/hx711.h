@@ -13,7 +13,7 @@ class hx711_t : public interface_t
     {
     }
 
-    bool init();
+    bool init() override;
     const char *get_char_name() { return "hx711"; }
 
   private:

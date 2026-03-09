@@ -37,6 +37,28 @@ bool scheduler_t::init()
     return true;
 }
 
+void scheduler_t::handle()
+{
+    if (state != state_t::READY)
+    {
+
+        bool result = true;
+
+        for (uint8_t i = 0; i < static_cast<uint8_t>(interface_t::interface_id_t::INTERFACE_NUMBER); i++)
+        {
+            result &= g_interfaces[i]->init();
+        }
+
+        if (!result)
+        {
+            state = state_t::ERROR;
+            return;
+        }
+
+        state = state_t::READY;
+    }
+}
+
 bool scheduler_t::execute_command(command_t command)
 {
     using code_t   = command_t::command_code_t;

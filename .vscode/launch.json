@@ -11,14 +11,17 @@
             "runToEntryPoint": "main",
             "servertype": "openocd",
             "serverpath": "D:/openocd/bin/openocd.exe",
-            //"device": "STM32G474RE",
+            "device": "STM32G474RE",
             "cwd": "${workspaceRoot}",
             "executable": "${workspaceRoot}/build/Debug/strain_gauge_sensor.elf",
             "configFiles": [
                 "interface/stlink.cfg",
-                "target/stm32wbx.cfg"
+                "target/stm32g4x.cfg"
             ],
             "svdFile": "${workspaceRoot}/svd/STM32G474xx.svd",
+            "swoConfig": {
+                "enabled": false
+            }
         }
     ]
 }

@@ -14,7 +14,7 @@ class scheduler_t : public device_t
 
     bool init() override;
 
-    void handle() override {}
+    void handle() override;
     bool execute_command(command_t command) override;
 };
 extern scheduler_t *g_scheduler;

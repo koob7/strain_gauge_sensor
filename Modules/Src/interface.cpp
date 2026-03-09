@@ -22,15 +22,6 @@ int32_t interface_t::meassure(uint8_t param_1)
     int32_t differential_voltage = -1;
 
     result &= connect_interface();
-    result &= wake_up_interface();
-
-    if (!result)
-        return -1;
-
-    result &= configure_interface(param_1);
-
-    if (!result)
-        return -1;
 
     uint32_t start = HAL_GetTick();
 
@@ -38,11 +29,30 @@ int32_t interface_t::meassure(uint8_t param_1)
     {
     };
 
+    result &= wake_up_interface();
+
+    if (!result)
+    {
+        sleep_interface();
+        return -1;
+    }
+
+    result &= configure_interface(param_1);
+
+    if (!result)
+    {
+        sleep_interface();
+        return -1;
+    }
+
     differential_voltage = read_bridge_voltage();
     result &= sleep_interface();
 
+    result &= disconnect_multipleksers();
     if (!result)
+    {
         return -1;
+    }
 
     return differential_voltage;
 }
@@ -56,6 +66,16 @@ bool interface_t::connect_interface()
     result &= g_multipleksers[as_int(multiplekser_t::multiplekser_name_t::MEASSURING_SOURCE_P)].config_output_channel(
         interface_multiplekser_output);
 
+    return result;
+}
+
+bool interface_t::disconnect_multipleksers()
+{
+    bool result = true;
+    for (uint8_t i = 0; i < as_int(multiplekser_t::multiplekser_name_t::MULTIPLEKSER_NUMBER); i++)
+    {
+        result &= g_multipleksers[i].deactivate_multiplekser();
+    }
     return result;
 }
 
@@ -89,11 +109,6 @@ bool interface_t::single_measurement(command_t command)
 
     int32_t differential_voltage = g_interfaces[command.parameters[as_int(layout_t::INTERFACE)]]->meassure(
         command.parameters[as_int(layout_t::EXTRA_PARAM)]);
-
-    if (differential_voltage < 0)
-    {
-        g_usart_control->send_frame("Measurement probably failed, negative result\n");
-    }
 
     std::string measurement_result_message = "Measurement result: ";
     measurement_result_message += std::to_string(differential_voltage);

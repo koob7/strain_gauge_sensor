@@ -2,6 +2,18 @@
 
 bool hx711_t::init()
 {
+
+    bool result = true;
+    result &= hx711_driver.power_up();
+    result &= hx711_driver.set_gain(hx711_driver_t::gain_ranges_t::GAIN_128);
+    result &= hx711_driver.power_down();
+
+    if (!result)
+    {
+        state = state_t::ERROR;
+        return false;
+    }
+
     state = state_t::READY;
     return true;
 }

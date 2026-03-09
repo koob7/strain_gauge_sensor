@@ -6,7 +6,7 @@
 
 class interface_t
 {
-    static constexpr uint32_t MULTIPLEKSER_VOLTAGE_STABLIZATION_TIME = 1000;
+    static constexpr uint32_t MULTIPLEKSER_VOLTAGE_STABLIZATION_TIME = 100;
 
   public:
     enum class interface_id_t : uint8_t
@@ -41,6 +41,7 @@ class interface_t
     virtual void register_interface() final;
 
     virtual bool connect_interface();
+    bool disconnect_multipleksers();
     virtual bool wake_up_interface()                  = 0;
     virtual bool configure_interface(uint8_t param_1) = 0;
     virtual int32_t read_bridge_voltage()             = 0;

@@ -3,6 +3,7 @@ enable_language(C ASM CXX)
 
 
 add_library(modules STATIC
+    Src/helper.cpp
     Src/device.cpp
     Src/interface.cpp
     Src/multiplekser.cpp

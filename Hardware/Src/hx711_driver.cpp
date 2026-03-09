@@ -13,19 +13,16 @@ bool hx711_driver_t::set_gain(gain_ranges_t gain_range)
     if (as_int(gain_range) >= as_int(gain_ranges_t::GAIN_RANGES_NUMBER))
         return false;
 
-    // we do not have to configure gain so making extra read
-    if (gain == gain_sck_pulses[as_int(gain_range)])
-    {
-        return true;
-    }
-
     gain = gain_sck_pulses[as_int(gain_range)];
 
     bool result = true;
 
-    result |= power_up();
+    if (!is_ready())
+        return false;
+
     result |= (read() != 0);
     result |= power_down();
+    result |= power_up();
     return result;
 }
 
@@ -36,7 +33,7 @@ long hx711_driver_t::read()
     // It checks the start sequence condition.
     while (!is_ready())
     {
-        if ((HAL_GetTick() - start) >= TIME_TO_ACTIVE)
+        if ((HAL_GetTick() - start) >= TIME_FOR_NEXT_CONVERSION)
         {
             return 0;
         }
@@ -55,10 +52,12 @@ long hx711_driver_t::read()
 
             // The clock line is set.
             HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_SET);
+            delay_us(FAST_PROCESOR_GAP);
             // The obtaining data is shifted(MSB first).
             data[2 - j] |= HAL_GPIO_ReadPin(data_line_port, data_line_pin) << (7 - i);
             // The clock line is reset.
             HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_RESET);
+            delay_us(FAST_PROCESOR_GAP);
         }
     }
 
@@ -67,7 +66,9 @@ long hx711_driver_t::read()
     {
 
         HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_SET);
+        delay_us(FAST_PROCESOR_GAP);
         HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_RESET);
+        delay_us(FAST_PROCESOR_GAP);
     }
 
     // It replicates the most significant bit to pad out a 32-bit signed integer.
@@ -90,6 +91,7 @@ bool hx711_driver_t::power_down()
 {
 
     HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_RESET);
+    delay_us(FAST_PROCESOR_GAP);
     HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_SET);
 
     delay_us(TIME_TO_SLEEP);
@@ -106,6 +108,8 @@ bool hx711_driver_t::power_up()
     while (((HAL_GetTick() - start) <= TIME_TO_ACTIVE) && !is_ready())
     {
     };
+
+    delay_us(FAST_PROCESOR_GAP);
 
     return is_ready();
 }

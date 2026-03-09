@@ -7,9 +7,10 @@
 
 class hx711_driver_t
 {
-
-    static constexpr uint32_t TIME_TO_SLEEP  = 65;  // time in us until hx711 enter power down mode when SCK is high
-    static constexpr uint32_t TIME_TO_ACTIVE = 500; // time in ms until hx711 enter normal mode when SCK is low
+    static constexpr uint32_t FAST_PROCESOR_GAP = 5;
+    static constexpr uint32_t TIME_TO_SLEEP     = 65;  // time in us until hx711 enter power down mode when SCK is high
+    static constexpr uint32_t TIME_TO_ACTIVE    = 500; // time in ms until hx711 enter normal mode when SCK is low
+    static constexpr uint32_t TIME_FOR_NEXT_CONVERSION = 200;
 
     int gain;
     float scale; // TODO replace to integer (full number)

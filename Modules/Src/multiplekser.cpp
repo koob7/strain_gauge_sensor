@@ -57,9 +57,9 @@ bool multiplekser_t::enable_multiplekser_output(uint8_t output_channel)
         return false;
 
     uint8_t pin_switch     = (output_channel - 1) % multiplekser_output_number;
-    GPIO_PinState s1_state = pin_switch & 0b0001 ? GPIO_PIN_RESET : GPIO_PIN_SET;
-    GPIO_PinState s2_state = pin_switch & 0b0010 ? GPIO_PIN_RESET : GPIO_PIN_SET;
-    GPIO_PinState s3_state = pin_switch & 0b0100 ? GPIO_PIN_RESET : GPIO_PIN_SET;
+    GPIO_PinState s1_state = pin_switch & 0b0001 ? GPIO_PIN_SET : GPIO_PIN_RESET;
+    GPIO_PinState s2_state = pin_switch & 0b0010 ? GPIO_PIN_SET : GPIO_PIN_RESET;
+    GPIO_PinState s3_state = pin_switch & 0b0100 ? GPIO_PIN_SET : GPIO_PIN_RESET;
 
     if (!safe_HALL_pin_set(s1_port, s1_pin, s1_state))
         return false;
@@ -100,7 +100,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
         {
             // IC8
             s1_port     = MULTI7_S1_GPIO_Port;
-            s1_pin      = MULTI7_S3_Pin;
+            s1_pin      = MULTI7_S1_Pin;
             s2_port     = MULTI7_S2_GPIO_Port;
             s2_pin      = MULTI7_S2_Pin;
             s3_port     = MULTI7_S3_GPIO_Port;
@@ -112,7 +112,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
         {
             // IC7
             s1_port     = MULTI6_S1_GPIO_Port;
-            s1_pin      = MULTI6_S3_Pin;
+            s1_pin      = MULTI6_S1_Pin;
             s2_port     = MULTI6_S2_GPIO_Port;
             s2_pin      = MULTI6_S2_Pin;
             s3_port     = MULTI6_S3_GPIO_Port;
@@ -127,7 +127,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
 
         //  IC9
         s1_port     = MULTI8_S1_GPIO_Port;
-        s1_pin      = MULTI8_S3_Pin;
+        s1_pin      = MULTI8_S1_Pin;
         s2_port     = MULTI8_S2_GPIO_Port;
         s2_pin      = MULTI8_S2_Pin;
         s3_port     = MULTI8_S3_GPIO_Port;
@@ -141,7 +141,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
 
         //  IC3
         s1_port     = MULTI4_S1_GPIO_Port;
-        s1_pin      = MULTI4_S3_Pin;
+        s1_pin      = MULTI4_S1_Pin;
         s2_port     = MULTI4_S2_GPIO_Port;
         s2_pin      = MULTI4_S2_Pin;
         s3_port     = MULTI4_S3_GPIO_Port;
@@ -155,7 +155,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
 
         // IC4
         s1_port     = MULTI5_S1_GPIO_Port;
-        s1_pin      = MULTI5_S3_Pin;
+        s1_pin      = MULTI5_S1_Pin;
         s2_port     = MULTI5_S2_GPIO_Port;
         s2_pin      = MULTI5_S2_Pin;
         s3_port     = MULTI5_S3_GPIO_Port;
@@ -167,7 +167,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
     case multiplekser_name_t::MEASSURING_SOURCE_P:
         // IC5
         s1_port     = MULTI2_S1_GPIO_Port;
-        s1_pin      = MULTI2_S3_Pin;
+        s1_pin      = MULTI2_S1_Pin;
         s2_port     = MULTI2_S2_GPIO_Port;
         s2_pin      = MULTI2_S2_Pin;
         s3_port     = MULTI2_S3_GPIO_Port;
@@ -179,7 +179,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
     case multiplekser_name_t::MEASSURING_SOURCE_N:
         // IC6
         s1_port     = MULTI3_S1_GPIO_Port;
-        s1_pin      = MULTI3_S3_Pin;
+        s1_pin      = MULTI3_S1_Pin;
         s2_port     = MULTI3_S2_GPIO_Port;
         s2_pin      = MULTI3_S2_Pin;
         s3_port     = MULTI3_S3_GPIO_Port;
@@ -191,7 +191,7 @@ bool multiplekser_t::config_pin_pointers(uint8_t output_channel)
     case multiplekser_name_t::OPAMP_GAIN:
         // IC1
         s1_port     = MULTI1_S1_GPIO_Port;
-        s1_pin      = MULTI1_S3_Pin;
+        s1_pin      = MULTI1_S1_Pin;
         s2_port     = MULTI1_S2_GPIO_Port;
         s2_pin      = MULTI1_S2_Pin;
         s3_port     = MULTI1_S3_GPIO_Port;

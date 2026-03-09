@@ -15,31 +15,9 @@ template <typename Enum> inline constexpr std::underlying_type_t<Enum> as_int(En
     return static_cast<std::underlying_type_t<Enum>>(e);
 }
 
-static uint32_t cycles_per_us;
-static uint32_t max_delay_us;
+extern uint32_t cycles_per_us;
+extern uint32_t max_delay_us;
 
-inline void init_dwt()
-{
-    CoreDebug->DEMCR = CoreDebug->DEMCR | CoreDebug_DEMCR_TRCENA_Msk;
-    DWT->CYCCNT      = 0;
-    DWT->CTRL        = DWT->CTRL | DWT_CTRL_CYCCNTENA_Msk;
-
-    cycles_per_us = SystemCoreClock / 1000000;
-    max_delay_us  = 0xFFFFFFFF / cycles_per_us;
-}
-
-inline void delay_us(uint32_t us)
-{
-    if (us > max_delay_us)
-        us = max_delay_us;
-
-    uint32_t start  = DWT->CYCCNT;
-    uint32_t cycles = us * cycles_per_us;
-
-    DWT->CYCCNT = 0;
-
-    while ((uint32_t)(DWT->CYCCNT - start) < cycles)
-        ;
-}
-
-inline uint32_t get_dwt_micros() { return DWT->CYCCNT / cycles_per_us; }
+void init_dwt();
+void delay_us(uint32_t us);
+uint32_t get_dwt_micros();
