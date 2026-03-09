@@ -10,7 +10,8 @@ add_library(modules STATIC
     Src/scheduler.cpp
     Src/serializer.cpp
     Src/usart_control.cpp
-    Src/d_adc.cpp
+    Src/adc_interface.cpp
+    Src/adc_module.cpp
     Src/adc_opamp.cpp
     Src/hx711.cpp
     Src/command.cpp

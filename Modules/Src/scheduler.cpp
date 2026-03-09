@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <type_traits>
 
+#include "adc_module.h"
 #include "adc_opamp.h"
-#include "d_adc.h"
 #include "helper.h"
 #include "hx711.h"
 #include "multiplekser.h"

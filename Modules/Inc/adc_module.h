@@ -4,11 +4,11 @@
 #include "main.h"
 #include "stm32g4xx_hal_adc.h"
 
-class adc_opamp_t : public adc_interface_t
+class adc_t : public adc_interface_t
 {
   public:
-    adc_opamp_t() = delete;
-    adc_opamp_t(interface_id_t id) : adc_interface_t(id, 1, hadc2, ADC_CHANNEL_5, ADC_CHANNEL_11) {}
+    adc_t() = delete;
+    adc_t(interface_id_t id) : adc_interface_t(id, 2, hadc1, ADC_CHANNEL_12, ADC_CHANNEL_15) {}
     const char *get_char_name() override;
 
   private:

@@ -40,7 +40,7 @@ class interface_t
   private:
     virtual void register_interface() final;
 
-    virtual bool connect_interface();
+    virtual bool connect_interface() final;
     bool disconnect_multipleksers();
     virtual bool wake_up_interface()                  = 0;
     virtual bool configure_interface(uint8_t param_1) = 0;
