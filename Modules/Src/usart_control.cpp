@@ -1,3 +1,4 @@
+#include "stm32g4xx_ll_usart.h"
 #include <cstdarg>
 #include <cstdio>
 
@@ -99,6 +100,7 @@ bool usart_control_t::execute_command(command_t command)
 
 void usart_control_t::dma_rx_irq(UART_HandleTypeDef *irq_huart)
 {
+    LL_USART_DisableDirectionRx(huart->Instance);
     if (irq_huart != huart)
     {
         return;
@@ -156,6 +158,7 @@ bool usart_control_t::receive_frame()
         }
     }
 
+    LL_USART_EnableDirectionRx(huart->Instance);
     if (HAL_UARTEx_ReceiveToIdle_DMA(huart, rx_buffer, BUFFER_SIZE) != HAL_OK)
     {
         return false;

@@ -138,17 +138,15 @@ int main(void)
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
+
+    g_usart_control->receive_frame();
+
     while (1)
     {
         if (!HAL_GPIO_ReadPin(USER_BTN_GPIO_Port, USER_BTN_Pin))
             HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_SET);
         else
             HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
-
-        if (g_usart_control->check_receiving() == false && g_usart_control->check_data_ready() == false)
-        {
-            g_usart_control->receive_frame();
-        }
 
         if (g_usart_control->check_data_ready())
         {
