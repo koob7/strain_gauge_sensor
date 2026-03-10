@@ -3,80 +3,136 @@ import csv
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
+from bokeh.plotting import figure, show, output_file
+from bokeh.palettes import Category10
+from bokeh.models import Range1d, WheelZoomTool, BoxZoomTool
+
 
 # foldery
 input_folder = Path("../logs")
 csv_folder = Path("../csv")
-png_folder = Path("../png")
+chart_folder = Path("../chart")
+
 csv_folder.mkdir(parents=True, exist_ok=True)
-png_folder.mkdir(parents=True, exist_ok=True)
+chart_folder.mkdir(parents=True, exist_ok=True)
 
 for input_file in input_folder.glob("*.txt"):
+    chart_file = chart_folder / (input_file.stem + ".html")
     csv_file = csv_folder / (input_file.stem + ".csv")
-    
-    if csv_file.exists():
-        print(f"Pominięto {csv_file} – już istnieje")
+
+    if chart_file.exists() and csv_file.exists():
+        print(f"Pominięto {input_file} – już istnieje")
         continue
 
+    print(f"Analizowanie {input_file}")
+
     # parsowanie danych
-    rows = []
     current_pressure = None
-    current_measurements = {}
-    all_params = []
+    data = {}
 
     with input_file.open("r", encoding="utf-8") as f:
         for line in f:
             # nowa seria pomiarów
             m = re.search(r"reference preassure:\s*(-?\d+)", line)
             if m:
-                if current_pressure is not None:
-                    row = [current_pressure] + [current_measurements.get(p, "") for p in all_params]
-                    rows.append(row)
                 current_pressure = int(m.group(1))
-                current_measurements = {}
                 continue
 
             # measurement + parameters
-            m = re.search(r"Measurement result:\s*(-?\d+).*parameters:\s*([0-9,\s]+)", line)
+            m = re.search(
+                r"Measurement result:\s*(-?\d+)\s+for configuration: interface:([a-zA-Z0-9_]+), parameters:\s*([0-9,\s]+)",
+                line
+            )
             if m:
                 result = int(m.group(1))
-                params = m.group(2).strip()
-                column_name = f"parameters:{params}"
-                if column_name not in all_params:
-                    all_params.append(column_name)
-                current_measurements[column_name] = result
+                interface = m.group(2).strip()
+                params = m.group(3).strip().replace(" ", "")  # usuwa spacje w parametrach
+                key = f"{interface} {params}"  # łączenie interfejsu z parametrami
 
-    # dodaj ostatnią serię
-    if current_pressure is not None:
-        row = [current_pressure] + [current_measurements.get(p, "") for p in all_params]
-        rows.append(row)
+                if key not in data:
+                    data[key] = []
 
-    if rows:
-        # zapis CSV
-        with csv_file.open("w", newline="", encoding="utf-8-sig") as f:
-            writer = csv.writer(f, delimiter=';')
-            headers = ["reference_pressure"] + all_params
-            writer.writerow(headers)
-            writer.writerows(rows)
-        print(f"Zapisano CSV: {csv_file}")
+                data[key].append((current_pressure, result))
 
-        # generowanie wykresu
-        df = pd.read_csv(csv_file, delimiter=';', encoding='utf-8-sig')
-        x = df['reference_pressure']
-        plt.figure(figsize=(10, 6))
-        for col in all_params:
-            plt.plot(x, df[col], marker='o', label=col)
-        plt.xlabel('Reference Pressure')
-        plt.ylabel('Measurement Result')
-        plt.title(f'Pomiar dla {input_file.stem}')
-        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-        plt.grid(True)
-        plt.tight_layout()
-        
-        # zapisz do folderu PNG
-        png_file = png_folder / (input_file.stem + ".png")
-        plt.savefig(png_file)
-        plt.close()
-        print(f"Zapisano wykres PNG: {png_file}")
-    else:
-        print(f"Brak danych w {input_file}, plik pominięty")
+    # sortowanie po pierwszym elemencie (ciśnieniu)
+    for key in data:
+        data[key].sort(key=lambda x: x[0])
+
+    csv_data: dict[int, dict[str, list[int]]] = {}
+
+    for key in data:
+        for pressure, result in data[key]:
+            if pressure not in csv_data:
+                csv_data[pressure] = {}
+
+            if key not in csv_data[pressure]:
+                csv_data[pressure][key] = []
+
+            csv_data[pressure][key].append(result)
+
+
+    all_keys = sorted(data.keys())
+    all_pressures = sorted(csv_data.keys())
+
+    with csv_file.open("w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.writer(f, delimiter=";")
+        writer.writerow(["reference_pressure"] + all_keys)
+
+        for p in all_pressures:
+            # ile wierszy potrzebujemy dla tego ciśnienia
+            max_len = max(len(csv_data[p].get(k, [])) for k in all_keys)
+
+            for i in range(max_len):
+                # tylko pierwszy wiersz dla danego ciśnienia pokazuje wartość ciśnienia
+                row = [p]
+
+                for k in all_keys:
+                    values = csv_data[p].get(k, [])
+                    if i < len(values):
+                        row.append(values[i])
+                    else:
+                        row.append("")  # pusta komórka jeśli brak pomiaru
+
+                writer.writerow(row)
+    
+    print(f"saved {csv_file}")
+
+
+    #przygotowanie wykresu Bokeh
+    p = figure(
+        title="Wyniki pomiarów",
+        x_axis_label="Reference Pressure",
+        y_axis_label="Measurement Result",
+        sizing_mode="stretch_both",
+        tools="pan,reset,save",  # inne narzędzia
+    )
+    box_zoom_y = BoxZoomTool(dimensions="height")
+    p.add_tools(box_zoom_y)
+
+    # Wheel zoom tylko po Y
+    wheel_zoom_y = WheelZoomTool(dimensions="height")
+    p.add_tools(wheel_zoom_y)
+
+    # Aktywacja scrolla i box zoom
+    p.toolbar.active_scroll = wheel_zoom_y  
+
+    colors = Category10[10]
+
+    for i, key in enumerate(all_keys):
+        x_vals = []
+        y_vals = []
+
+        for pressure in all_pressures:
+            values = csv_data[pressure].get(key, [])
+            for v in values:
+                x_vals.append(pressure)
+                y_vals.append(v)
+
+        # zamiast circle() używamy scatter()
+        p.scatter(x_vals, y_vals, size=8, color=colors[i % len(colors)], marker="circle", legend_label=key)
+        p.line(x_vals, y_vals, color=colors[i % len(colors)], line_width=2, legend_label=key)
+
+    output_file(chart_file)
+    print(f"saved {chart_file}")
+    p.legend.click_policy = "hide"
+    show(p)

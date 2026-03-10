@@ -1,0 +1,53 @@
+08:13:23:959 -> Welcome from STM32G4
+08:13:23:961 -> In Straing GaugeWelcome from STM32G4
+08:13:24:024 -> In Straing Gauge sensor
+08:13:24:026 -> 
+08:13:24:026 -> 
+08:13:24:026 -> User messenger initiated
+08:13:24:251 -> Welcome from STM32G4
+08:13:24:252 -> In Straing Gauge sensor
+08:13:24:254 -> 
+08:13:24:255 -> 
+08:13:24:255 -> User messenger initiated
+08:13:24:774 -> command module initiated08:13:28:715 -> Restoring serialized commands
+08:13:28:718 -> Scheduling measurement
+08:13:28:720 -> Scheduling measurement
+08:13:28:722 -> Scheduling measurement
+08:13:28:726 -> Scheduling measurement
+08:13:28:823 -> Command executed with result: 1
+08:13:38:642 -> Executing scheduled measurements for reference preassure: 0
+08:13:38:843 -> Measurement result: -152 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+08:13:39:045 -> Measurement result: 986 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+08:13:39:961 -> Measurement result: 452896 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+08:13:40:795 -> Measurement result: -3048980 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:13:40:894 -> Command executed with result: 1
+08:13:48:793 -> Executing scheduled measurements for reference preassure: 100
+08:13:48:994 -> Measurement result: -152 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+08:13:49:195 -> Measurement result: 915 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+08:13:50:029 -> Measurement result: 451215 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+08:13:50:864 -> Measurement result: -2814591 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:13:50:962 -> Command executed with result: 1
+08:13:57:229 -> Executing scheduled measurements for reference preassure: 200
+08:13:57:430 -> Measurement result: -151 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+08:13:57:632 -> Measurement result: 914 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+08:13:58:466 -> Measurement result: 451633 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+08:13:59:299 -> Measurement result: -2783041 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:13:59:398 -> Command executed with result: 1
+08:14:05:783 -> Executing scheduled measurements for reference preassure: 44
+08:14:05:985 -> Measurement result: -151 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+08:14:06:186 -> Measurement result: 971 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+08:14:07:020 -> Measurement result: 451927 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+08:14:07:854 -> Measurement result: -2962243 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:14:07:953 -> Command executed with result: 1
+08:14:14:754 -> Executing scheduled measurements for reference preassure: 144
+08:14:14:955 -> Measurement result: -144 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+08:14:15:156 -> Measurement result: 1059 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+08:14:15:990 -> Measurement result: 452190 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+08:14:16:824 -> Measurement result: -3331021 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:14:16:924 -> Command executed with result: 1
+08:14:23:307 -> Executing scheduled measurements for reference preassure: 244
+08:14:23:509 -> Measurement result: -154 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+08:14:23:710 -> Measurement result: 1176 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+08:14:24:544 -> Measurement result: 452390 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+08:14:25:378 -> Measurement result: -3442720 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:14:25:478 -> Command executed with result: 1
