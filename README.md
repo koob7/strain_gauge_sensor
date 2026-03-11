@@ -46,7 +46,26 @@ Efektem działania skryptu będzie:
 ![alt text](attachements/chart.png)
 ---
 
-## 3. Typy interfejsów
+## 3. Propozycje dla nowego PCB
+
+- Połączyć dwie linie sygnałowe (**DOUT**, **SCK**) dla układów HX711.
+- Rezystory i zworki mogą na siebie nachodzić, aby ograniczyć zajmowaną przestrzeń PCB.
+- Część złączek powinna być podpięta do kilku multiplekserów, aby ułatwić przełączanie.
+- Dodać diodę zabezpieczającą przed odwrotną polaryzacją napięcia wejściowego.
+- Poprawić footprint złącza DC – obecnie **plus zwarty z minusem (prawy dolny pin)**.
+- Można zwiększyć odstępy między konektorami tensometrów.
+- Można podłączyć złącza **B** układów HX711 do wolnych pinów multipleksera interfejsów.
+- Obecna konfiguracja ADC nie pozwala na pomiary różnicowe – błędna konfiguracja w przełącznicy ADC. Można wykorzystać oba kanały, ponieważ jest dużo wolnego miejsca w multiplekserze interfejsów.
+- Prawdopodobnie potrzebny będzie mikrokontroler z większą liczbą pinów.
+- Dodać układ **soft start** dla **superkondensatora (SUPER CAP)**.
+- Dodać **testpointy** na liniach podłączonych do interfejsów.
+- Opcjonalnie dodać czwarte mocowanie na śrubę.
+- Dodać interfejs do odczytywania referencyjnego ciśnienia z manometru.
+- Wstępna przetwornica napięcia wejściowego.
+- Zewnętrzne układy **op-amp**.
+
+
+## 4. Typy interfejsów
 
 | ID | Interfejs       |
 |----|----------------|
@@ -58,7 +77,7 @@ tab 1.
 
 ---
 
-## 4. Parametry komend
+## 5. Parametry komend
 
 | Parametr      |
 |---------------|
@@ -73,7 +92,7 @@ tab 2.
 
 ---
 
-## 5. Lista komend
+## 6. Lista komend
 
 | ID | Komenda                           |
 |----|----------------------------------|
@@ -90,7 +109,7 @@ tab 2.
 
 tab 3. 
 
-## 6. Rezystory dla poszczególnych multiplekserów IC
+## 7. Rezystory dla poszczególnych układów IC
 
 ### IC 1
 
