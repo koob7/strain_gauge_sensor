@@ -63,6 +63,7 @@ Efektem działania skryptu będzie:
 - Dodać interfejs do odczytywania referencyjnego ciśnienia z manometru.
 - Wstępna przetwornica napięcia wejściowego.
 - Zewnętrzne układy **op-amp**.
+- Zmienić złacze zasilające na standardowe wymiary
 
 
 ## 4. Typy interfejsów
@@ -116,8 +117,8 @@ tab 3.
 | Wyjście | Rezystory | Wartość |
 |---------|-----------|--------|
 | Y0      | R16       | 402R   |
-| Y1      | R15       | 4K     |
-| Y2      | R13 + R14 | 2R     |
+| Y1      | R15       | 1R     |
+| Y2      | R13 + R14 | 8K     |
 | Y3      | R17 + R18 | 804R   |
 | Y4      | R10 + R12 | 20R    |
 | Y5      | R8  + R9  | 2K     |
