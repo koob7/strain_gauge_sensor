@@ -68,11 +68,11 @@ Efektem działania skryptu będzie:
 
 ## 4. Typy interfejsów
 
-| ID | Interfejs       |
-|----|----------------|
-| 0  | HX711           |
-| 1  | ADC_OPAMP       |
-| 2  | ADC             |
+| ID  | Interfejs |
+| --- | --------- |
+| 0   | HX711     |
+| 1   | ADC_OPAMP |
+| 2   | ADC       |
 
 tab 1.
 
@@ -95,18 +95,18 @@ tab 2.
 
 ## 6. Lista komend
 
-| ID | Komenda                           |
-|----|----------------------------------|
-| 0  | SCHEDULE_MEASUREMENT              |
-| 1  | EXECUTE_MEASUREMENTS              |
-| 2  | SINGLE_MEASUREMENT                |
-| 3  | REMOVE_MEASUREMENT                |
-| 4  | REMOVE_SCHEDULED_MEASUREMENTS    |
-| 5  | SERIALIZE_COMMANDS                |
-| 6  | SAVE_COMMAND_TO_FLASH *(private)* |
-| 7  | RESTORE_SERIALIZED_COMMANDS       |
-| 8  | ERASE_FLASH                       |
-| 9  | PRINT_SCHEDULED_COMMANDS          |
+| ID  | Komenda                           |
+| --- | --------------------------------- |
+| 0   | SCHEDULE_MEASUREMENT              |
+| 1   | EXECUTE_MEASUREMENTS              |
+| 2   | SINGLE_MEASUREMENT                |
+| 3   | REMOVE_MEASUREMENT                |
+| 4   | REMOVE_SCHEDULED_MEASUREMENTS     |
+| 5   | SERIALIZE_COMMANDS                |
+| 6   | SAVE_COMMAND_TO_FLASH *(private)* |
+| 7   | RESTORE_SERIALIZED_COMMANDS       |
+| 8   | ERASE_FLASH                       |
+| 9   | PRINT_SCHEDULED_COMMANDS          |
 
 tab 3. 
 
@@ -114,41 +114,69 @@ tab 3.
 
 ### IC 1
 
-| Wyjście | Rezystory | Wartość |
-|---------|-----------|--------|
-| Y0      | R16       | 402R   |
-| Y1      | R15       | 1R     |
-| Y2      | R13 + R14 | 8K     |
-| Y3      | R17 + R18 | 804R   |
-| Y4      | R10 + R12 | 20R    |
-| Y5      | R8  + R9  | 2K     |
-| Y6      | R11       | 10R    |
-| Y7      | R7        | 5R     |
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R16       | 402R    | T         |
+| Y1      | 2        | R15       | 1R      | T         |
+| Y2      | 3        | R13 + R14 | 8K      | T         |
+| Y3      | 4        | R17 + R18 | 804R    | T         |
+| Y4      | 5        | R10 + R12 | 20R     | T         |
+| Y5      | 6        | R8  + R9  | 2K      | T         |
+| Y6      | 7        | R11       | 10R     | T         |
+| Y7      | 8        | R7        | 5R      | T         |
 
 ### IC 3
 
-| Wyjście | Rezystory | Wartość |
-|---------|-----------|--------|
-| Y0      | R21       | 120R   |
-| Y3      | R22       | 348R   |
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R21       | 120R    | T         |
+| Y1      |          |           |         |           |
+| Y2      |          |           |         |           |
+| Y3      | 4        | R22       | 348R    |           |
 
 ### IC 4
 
-| Wyjście | Rezystory | Wartość |
-|---------|-----------|--------|
-| Y0      | R29       | 120R   |
-| Y3      | R30       | 348R   |
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R29       | 120R    | T         |
+| Y1      |          |           |         |           |
+| Y2      |          |           |         |           |
+| Y3      | 4        | R30       | 348R    |           |
 
 ### IC 7
 
-| Wyjście | Rezystory | Wartość |
-|---------|-----------|--------|
-| Y0      | R31 + S9  | 120R   |
-| Y3      | R32 + S10 | 348R   |
+| Wyjście | Parametr | Rezystory                      | Wartość | pass/fail |
+| ------- | -------- | ------------------------------ | ------- | --------- |
+| Y0      | 9        | R31 + S9                       | 120R    | T         |
+| Y1      | 10       | T1 - naklejony na pustej butli | 120R    | T         |
+| Y2      | 11       | T2                             | 120R    | T         |
+| Y3      | 12       | R32 + S10                      | 348R    |           |
+| Y4      | 13       | T4                             | 120R    | T         |
+| Y5      | 14       | T5                             | 120R    | T         |
+| Y6      | 15       | T8                             | 120R    | T         |
+
+
+### IC 8
+
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        |           |         | F         |
+| Y1      | 2        |           |         | F         |
+| Y2      | 3        |           |         | F         |
+| Y3      | 4        |           |         | F         |
+| Y4      | 5        |           |         | F         |
+
 
 ### IC 9
 
-| Wyjście | Rezystory | Wartość |
-|---------|-----------|--------|
-| Y0      | R35 + S11 | 120R   |
-| Y3      | R36 + S12 | 348R   |
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R35 + S11 | 120R    | T         |
+| Y1      |          |           |         |           |
+| Y2      | 3        | T3        | 120R    | T         |
+| Y3      | 4        | R36 + S12 | 348R    |           |
+| Y4      | 5        | T6        | 120R    | T         |
+| Y5      | 6        |           |         | F         |
+| Y6      | 7        | T7        | 120R    | T         |
+| Y7      | 8        |           |         | F         |
+

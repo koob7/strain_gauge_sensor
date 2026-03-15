@@ -6,7 +6,6 @@
 #include "usart_control.h"
 #include <algorithm>
 
-
 serializer_t *g_serializer = nullptr;
 
 bool serializer_t::init()
@@ -71,7 +70,8 @@ bool serializer_t::execute_command(command_t command)
         if (addres_to_store_next_command + flash_layout_t::layout_size >= flash_storage_addres_end)
             return false;
 
-        uint32_t crc_result = calculate_crc(command.get_parameters_pointer(), command.get_parameters_size());
+        uint32_t crc_result =
+            calculate_crc(reinterpret_cast<uint8_t *>(command.get_parameters_pointer()), command.get_parameters_size());
 
         flash_layout_t flash_layout;
         flash_layout.crc     = crc_result;
@@ -135,8 +135,9 @@ bool serializer_t::execute_command(command_t command)
                 return true;
             }
 
-            result &= flash_layout.crc == calculate_crc(flash_layout.command.get_parameters_pointer(),
-                                                        flash_layout.command.get_parameters_size());
+            result &= flash_layout.crc ==
+                      calculate_crc(reinterpret_cast<uint8_t *>(flash_layout.command.get_parameters_pointer()),
+                                    flash_layout.command.get_parameters_size());
 
             if (!result)
             {

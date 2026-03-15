@@ -1,0 +1,224 @@
+Executing single measurement
+Measurement result: -1518 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1601 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4010 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1398 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1031 for conarameters: 9, 5, 1, 1, 7, 
+c_opamp, pfiguration: interface:adCommand executed with result: 1
+Executing single measurement
+Measurement result: 4007 for configuration: interface:adc_opamp, parameters: 9, 5, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -843 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1015 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1036 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1041 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1032 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1042 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1057 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1048 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1044 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1045 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1046 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1037 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1052 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1040 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4014 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4011 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -3696 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4009 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4012 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4006 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4011 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4011 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4011 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4013 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4006 for configuration: interface:adc_opamp, parameters: 9, 7, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement failed, wrong bridge configuration
+Command executed with result: 0
+Executing single measurement
+Measurement failed, wrong bridge configuration
+Command executed with result: 0
+Executing single measurement
+Measurement result: -1141 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1054 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1050 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1045 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1043 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1626 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1632 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1624 for configuration: interface:adc_opamp, parameters: 9, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4009 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 2, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 3, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 4, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 5, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4001 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4009 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+command module initiatedExecuting single measurement
+Measurement result: -4008 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4009 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4008 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4009 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4010 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1139 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1055 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -1058 for configuration: interface:adc_opamp, parameters: 9, 6, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: -4014 for configuration: interface:adc_opamp, parameters: 9, 8, 1, 1, 7, 
+Command executed with result: 1
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+command module initiatedExecuting single measurement
+Measurement result: 4030 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement

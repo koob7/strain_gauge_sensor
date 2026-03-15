@@ -1,0 +1,114 @@
+Scheduled commands:
+Command parameters: 0 1 10 1 1 1 7
+Command parameters: 0 1 10 1 1 1 8
+Command parameters: 0 0 10 1 1 1 0
+Command parameters: 0 0 10 1 1 1 1
+Command parameters: 0 1 11 1 1 1 7
+Command parameters: 0 1 11 1 1 1 8
+Command parameters: 0 0 11 1 1 1 0
+Command parameters: 0 0 11 1 1 1 1
+Command parameters: 0 1 13 1 1 1 7
+Command parameters: 0 1 13 1 1 1 8
+Command parameters: 0 0 13 1 1 1 0
+Command parameters: 0 0 13 1 1 1 1
+Command parameters: 0 1 14 1 1 1 7
+Command parameters: 0 1 14 1 1 1 8
+Command parameters: 0 0 14 1 1 1 0
+Command parameters: 0 0 14 1 1 1 1
+Command parameters: 0 1 15 1 1 1 7
+Command parameters: 0 1 15 1 1 1 8
+Command parameters: 0 0 15 1 1 1 0
+Command parameters: 0 0 15 1 1 1 1
+Command parameters: 0 1 9 3 1 1 7
+Command parameters: 0 1 9 3 1 1 8
+Command parameters: 0 0 9 3 1 1 0
+Command parameters: 0 0 9 3 1 1 1
+Command parameters: 0 1 9 5 1 1 7
+Command parameters: 0 1 9 5 1 1 8
+Command parameters: 0 0 9 5 1 1 0
+Command parameters: 0 0 9 5 1 1 1
+Command parameters: 0 1 9 7 1 1 7
+Command parameters: 0 1 9 7 1 1 8
+Command parameters: 0 0 9 7 1 1 0
+Command parameters: 0 0 9 7 1 1 1
+Command parameters: 0 1 15 4 4 4 7
+Command parameters: 0 1 15 4 4 4 8
+Command parameters: 0 0 15 4 4 4 0
+Command parameters: 0 0 15 4 4 4 1
+Command parameters: 0 1 10 3 1 1 7
+Command parameters: 0 1 10 3 1 1 8
+Command parameters: 0 0 10 3 1 1 0
+Command parameters: 0 0 10 3 1 1 1
+Command parameters: 0 1 11 3 1 1 7
+Command parameters: 0 1 11 3 1 1 8
+Command parameters: 0 0 11 3 1 1 0
+Command parameters: 0 0 11 3 1 1 1
+Command parameters: 0 1 13 3 1 1 7
+Command parameters: 0 1 13 3 1 1 8
+Command parameters: 0 0 13 3 1 1 0
+Command parameters: 0 0 13 3 1 1 1
+Command parameters: 0 1 14 5 1 1 7
+Command parameters: 0 1 14 5 1 1 8
+Command parameters: 0 0 14 5 1 1 0
+Command parameters: 0 0 14 5 1 1 1
+Command parameters: 0 1 14 7 1 1 7
+Command parameters: 0 1 14 7 1 1 8
+Command parameters: 0 0 14 7 1 1 0
+Command parameters: 0 0 14 7 1 1 1
+Command executed with result: 1
+Removing measurement with index: 55
+Command executed with result: 1
+Removing measurement with index: 51
+Command executed with result: 1
+Removing measurement with index: 47
+Command executed with result: 1
+Removing measurement with index: 43
+Command executed with result: 1
+Command executed with result: 0
+Removing measurement with index: 39
+Command executed with result: 1
+Removing measurement with index: 35
+Command executed with result: 1
+Removing measurement with index: 31
+Command executed with result: 1
+Removing measurement with index: 27
+Command executed with result: 1
+Removing measurement with index: 24
+Command executed with result: 1
+Removing all scheduled measurements
+Command executed with result: 1
+Scheduled commands:
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduled commands:
+Command parameters: 0 1 10 3 1 1 7
+Command parameters: 0 0 10 3 1 1 1
+Command parameters: 0 1 11 3 1 1 7
+Command parameters: 0 0 11 3 1 1 1
+Command parameters: 0 1 13 3 1 1 7
+Command parameters: 0 0 13 3 1 1 1
+Command parameters: 0 1 14 5 1 1 7
+Command parameters: 0 0 14 5 1 1 1
+Command parameters: 0 1 14 7 1 1 7
+Command parameters: 0 0 14 7 1 1 1
+Command executed with result: 1
+Welcome from STM32G4Welcome from STM32GWelcome from STM32�Welcome from STM32�Welcome from STM32Welcome from STM3�Welcome from STM3�Welcome from STM3�Welcome from STM3Welcome from STM�Welcome from STM�Welcome from STMWelcome from STM�Welcome from STMWelcome from ST�Welcome from ST�Welcome from ST�Welcome from ST�Welcome from STWelcome from S�Welcome from S�Welcome from S�Welcome from S�Welcome from SWelcome from SWelcome from �Welcome from �Welcome from �Welcome from �Welcome from �Welcome from Welcome from�Welcome from�Welcome from�Welcome from�Welcome from�Welcome from�Welcome fromWelcome fro�Welcome fro�Welcome fro�Welcome fro�Welcome fro�Welcome fro�Welcome froWelcome froWelcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome frWelcome frWelcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome fWelcome fWelcome �Welcome �Welcome �Welcome �Welcome �Welcome �Welcome �Welcome �Welcome �Welcome Welcome Welcome Welcome�Welcome�Welcome�Welcome�Welcome�WelcomeWelcome�Welcome�Welcome�Welcome�Welcome�WelcomeWelcomeWelcomeWelcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�WelcomWelcom�Welcom�Welcom�WelcomWelcomWelcomWelco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�Welco�WelcoWelcoWelcoWelcoWelc�Welc�Welc�Welc�Welc�Welc�WelcWelc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�WelcWelcWelcWelcWelcWel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�WelWel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�WelWelWelWelWelWelWe�We�We�We�We�We�We�We�We�We�We�We�We�We�We�We�We�We�We�We�WeWe�We�We�WeWe�We�We�WeWeWeWeWeWeWeWeW�W�W�W�W�W�W�W�W�W�W�W�WW�W�W�W�W�W�W�W�W�W�W�W�W�WW�W�W�W�W�W�W�W�W�W�WWWWWWWWWW���������������������������������������������������

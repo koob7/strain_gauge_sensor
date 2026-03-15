@@ -1,3 +1,4 @@
+#include "helper.h"
 #include <cstdint>
 #include <cstdlib>
 #include <cstring>
@@ -32,7 +33,7 @@ class command_t
         PARAMETERS_COUNT,
     };
 
-    uint8_t parameters[static_cast<uint8_t>(default_command_layout_t::PARAMETERS_COUNT)];
+    uint16_t parameters[as_int(default_command_layout_t::PARAMETERS_COUNT)];
 
     using parameters_type = typename std::remove_reference_t<decltype(parameters[0])>;
 
@@ -65,11 +66,11 @@ class command_t
     command_t() { memset(parameters, 0, sizeof(parameters)); }
     command_t(const command_t &command) { memcpy(parameters, command.parameters, sizeof(parameters)); }
 
-    uint8_t read_numberf_from_string(char *&ptr);
+    uint16_t read_numberf_from_string(char *&ptr);
 
     bool decode_frame(std::optional<std::pair<uint8_t *, uint8_t>> frame);
 
-    [[nodiscard]] uint8_t *get_parameters_pointer() { return parameters; }
+    [[nodiscard]] uint16_t *get_parameters_pointer() { return parameters; }
     [[nodiscard]] static uint8_t get_parameters_size() { return sizeof(parameters); }
     void print_as_dafult_layout();
     void print_as_plain_parameters();

@@ -1,0 +1,147 @@
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger in�Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+command module initiatedExecuting scheduled measurements for reference preassure: 1
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4047 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4017 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 2039 for configuration: interface:adc, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 2040 for configuration: interface:adc, parameters: 1, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4020 for configuration: interface:adc_opamp, parameters: 2, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 2, 1, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 1 for configuration: interface:adc_opamp, parameters: 1, 1, 3, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 0 for configuration: interface:adc_opamp, parameters: 1, 1, 3, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 0 for configuration: interface:adc_opamp, parameters: 1, 1, 3, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 0 for configuration: interface:adc_opamp, parameters: 1, 1, 3, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4047 for configuration: interface:adc_opamp, parameters: 1, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4017 for configuration: interface:adc_opamp, parameters: 1, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4018 for configuration: interface:adc_opamp, parameters: 1, 3, 1, 1, 7, 
+Command executed with result: 1
+Executing single measurement
+Measurement result: 4019 for configuration: interface:adc_opamp, parameters: 1, 3, 1, 1, 7, 
+Command executed with result: 1
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+UserWelcome from STM32G4
+In Straing Gauge sensor
+
+
+Welcome from STM32G4
+In Straing Gauge sensor
+Welcome from STM32G4
+In Straing Gauge senso�Welcome from STM32G4
+In Straing Gauge sensWelcome from STM32G4
+In Straing Gauge se�Welcome from STM32G4
+In Straing Gauge s�Welcome from STM32G4
+In Straing Gauge �Welcome from STM32G4
+In Straing Gauge�Welcome from STM32G4
+In Straing Gaug�Welcome from STM32G4
+In Straing Gau�Welcome from STM32G4
+In Straing Ga�Welcome from STM32G4
+In Straing G�Welcome from STM32G4
+In Straing Welcome from STM32G4
+In Straing �Welcome from STM32G4
+In Straing�Welcome from STM32G4
+In Strain�Welcome from STM32G4
+In Strain�Welcome from STM32G4
+In Strai�Welcome from STM32G4
+In StraiWelcome from STM32G4
+In Stra�Welcome from STM32G4
+In Str�Welcome from STM32G4
+In Str�Welcome from STM32G4
+In St�Welcome from STM32G4
+In St�Welcome from STM32G4
+In S�Welcome from STM32G4
+In S�Welcome from STM32G4
+In �Welcome from STM32G4
+In �Welcome from STM32G4
+In�Welcome from STM32G4
+In�Welcome from STM32G4
+InWelcome from STM32G4
+I�Welcome from STM32G4
+I�Welcome from STM32G4
+�Welcome from STM32G4
+�Welcome from STM32G4
+�Welcome from STM32G4
+Welcome from STM32G4�Welcome from STM32G4�Welcome from STM32G4Welcome from STM32G�Welcome from STM32G�Welcome from STM32GWelcome from STM32�Welcome from STM32�Welcome from STM32�Welcome from STM32Welcome from STM3�Welcome from STM3�Welcome from STM3�Welcome from STM3Welcome from STM�Welcome from STMWelcome from STM�Welcome from STMWelcome from ST�Welcome from ST�Welcome from ST�Welcome from STWelcome from S�Welcome from S�Welcome from S�Welcome from S�Welcome from SWelcome from �Welcome from �Welcome from �Welcome from �Welcome from Welcome fromWelcome from�Welcome from�Welcome from�Welcome fromWelcome fromWelcome fro�Welcome fro�Welcome fro�Welcome fro�Welcome fro�Welcome froWelcome froWelcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome fr�Welcome frWelcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome f�Welcome fWelcome Welcome �Welcome �Welcome �Welcome �Welcome �Welcome �Welcome �Welcome Welcome Welcome�Welcome�Welcome�Welcome�Welcome�Welcome�Welcome�Welcome�WelcomeWelcomeWelcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�Welcom�WelcomWelcomWelcomWelco�Welco�Welco�WelcoWelco�Welco�Welco�Welco�Welco�Welco�Welco�WelcoWelcoWelcoWelc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�Welc�WelcWelcWelcWelcWel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�Wel�WelWelWelWelWelWe�We�We�We�We�We�We�We�We�We�We�We�We�We�We�We�WeWe�We�WeWe�We�WeWeWeWeWeWeWeW�W�W�W�W�W�W�W�W�W�WW�W�W�WW�W�W�W�W�W�W�WW�W�W�W�W�W�W�W�WWWWWWWW�������������������������������������������Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+Welcome from STM32G4
+In Straing Gauge sensor
+
+
+User messenger initiated
+command module initiated

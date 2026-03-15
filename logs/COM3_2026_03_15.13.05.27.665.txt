@@ -1,0 +1,380 @@
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduling measurement
+Command executed with result: 1
+Scheduled commands:
+Command parametersmand parameters: 0 0 10 3 1 1 1
+Command parameters: 0 1 11 3 1 11 1 7
+Com: 0 1 10 3  7
+Command parameters: 0 0 11 3 1 1 1
+Command parameters: 0 1 13 3 1 1 7
+Command parameters: 0 0 13 3 1 1 1
+Command parameters: 0 1 14 5 1 1 7
+Command parameters: 0 0 14 5 1 1 1
+Command parameters: 0 1 14 7 1 1 7
+Command parameters: 0 0 14 7 1 1 1
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 305
+Measurement result: -446 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 844943 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2413 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4860971 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1996 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3998261 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 879 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1709627 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1513 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2990148 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 290
+Measurement result: -506 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 967093 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2344 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4739878 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1938 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3867396 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 824 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1602956 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1442 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2832956 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 280
+Measurement result: -545 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1046276 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2310 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4661157 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1887 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3781109 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 784 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1536214 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1387 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2732524 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 270
+Measurement result: -579 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1117560 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2272 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4589270 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1850 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3703621 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 760 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1476359 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1342 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2642254 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 260
+Measurement result: -632 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1225748 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2217 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4480001 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1795 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3585302 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 704 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1385294 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1277 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2505084 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 250
+Measurement result: -671 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1310150 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2172 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4393746 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1755 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3492184 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 672 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1314582 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1225 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2402001 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 240
+Measurement result: -716 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1406389 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2115 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4292947 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1694 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3383565 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 637 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1232689 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1178 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2310959 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 230
+Measurement result: -749 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1490135 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2068 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4203165 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1650 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3288015 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 601 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1156475 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1140 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2230214 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 220
+Measurement result: -802 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1585527 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 2022 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4105747 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1589 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3182212 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 553 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1075178 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1079 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2120726 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 210
+Measurement result: -849 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1669709 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1975 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -4018384 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1545 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -3087478 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 518 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -1002904 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 1033 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -2034242 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 200
+Measurement result: -893 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1772024 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1932 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3912398 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1494 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2972166 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 462 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -913654 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 979 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1917581 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 190
+Measurement result: -938 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1867151 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1883 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3811781 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1447 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2863620 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 431 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -831379 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 938 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1824863 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 180
+Measurement result: -982 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 1970692 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1833 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3703860 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1395 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2746298 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 387 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -739956 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 885 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1712015 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 170
+Measurement result: -1015 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2040781 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1795 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3630482 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1339 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2666238 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 349 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -677943 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 842 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1635673 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 160
+Measurement result: -1055 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2133256 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1744 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3533105 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1299 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2560421 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 305 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -597298 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 794 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1533659 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 150
+Measurement result: -1104 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2218302 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1691 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3442982 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1240 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2461976 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 271 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -522385 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 741 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1442913 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 140
+Measurement result: -1154 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2329854 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1636 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3324131 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1185 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2333624 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 226 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -423778 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 694 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1333178 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 130
+Measurement result: -1199 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2423722 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1601 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3224850 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1133 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2225390 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 179 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -341572 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 648 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1242664 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 120
+Measurement result: -1240 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2504612 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1551 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3139393 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1095 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2131789 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 139 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -270321 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 615 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1163142 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 110
+Measurement result: -1284 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2602234 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1497 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -3034426 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 1033 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -2018228 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 99 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -184328 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 558 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -1071809 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 100
+Measurement result: -1338 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2717017 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1430 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2912370 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 969 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1884624 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 24 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -81574 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 503 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -960488 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 90
+Measurement result: -1374 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2786345 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1393 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2837899 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 926 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1802927 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: 1 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: -20561 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 474 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -901222 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 80
+Measurement result: -1391 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2838922 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1381 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2780055 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 892 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1739054 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -32 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: 29245 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 469 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -877280 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 70
+Measurement result: -1446 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 2942066 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1318 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2672633 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 834 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1619786 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -76 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: 125179 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 412 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -773218 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 60
+Measurement result: -1485 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 3038341 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1270 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2569621 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 781 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1506407 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -130 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: 212713 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 355 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -670727 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 50
+Measurement result: -1557 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 3178243 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1200 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2419002 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 692 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1343120 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -196 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement resulfor con7415 t: 33figuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 285 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -531438 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 40
+Measurement result: -1607 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 3264427 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1150 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2324639 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 644 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1239891 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -231 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: 416657 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 227 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -452323 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 30
+Measurement result: -1655 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 3365924 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1096 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2215500 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 582 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1118789 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -290 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: 514994 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 176 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -339850 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1
+Executing scheduled measurements for reference preassure: 10
+Measurement result: -1691 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
+Measurement result: 3442182 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
+Measurement result: 1046 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 
+Measurement result: -2133600 for configuration: interface:hx711, parameters: 11, 3, 1, 1, 1, 
+Measurement result: 533 for configuration: interface:adc_opamp, parameters: 13, 3, 1, 1, 7, 
+Measurement result: -1027872 for configuration: interface:hx711, parameters: 13, 3, 1, 1, 1, 
+Measurement result: -316 for configuration: interface:adc_opamp, parameters: 14, 5, 1, 1, 7, 
+Measurement result: 586829 for configuration: interface:hx711, parameters: 14, 5, 1, 1, 1, 
+Measurement result: 124 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
+Measurement result: -256057 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
+Command executed with result: 1

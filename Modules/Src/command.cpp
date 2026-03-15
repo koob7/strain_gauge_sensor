@@ -2,22 +2,22 @@
 #include "helper.h"
 #include "usart_control.h"
 
-uint8_t command_t::read_numberf_from_string(char *&ptr)
+uint16_t command_t::read_numberf_from_string(char *&ptr)
 {
     if (memcmp(ptr, HEX_PREFIX, strlen(HEX_PREFIX)) == 0)
     {
         ptr += strlen(HEX_PREFIX);
-        return static_cast<uint8_t>(strtoul(ptr, &ptr, 16));
+        return static_cast<uint16_t>(strtoul(ptr, &ptr, 16));
     }
     else if (memcmp(ptr, BINARY_PREFIX, strlen(BINARY_PREFIX)) == 0)
     {
         ptr += strlen(BINARY_PREFIX);
-        return static_cast<uint8_t>(strtoul(ptr, &ptr, 2));
+        return static_cast<uint16_t>(strtoul(ptr, &ptr, 2));
     }
     else if (memcmp(ptr, DECIMAL_PREFIX, strlen(DECIMAL_PREFIX)) == 0)
     {
         ptr += strlen(DECIMAL_PREFIX);
-        return static_cast<uint8_t>(strtoul(ptr, &ptr, 10));
+        return static_cast<uint16_t>(strtoul(ptr, &ptr, 10));
     }
 
     return 0;
@@ -51,7 +51,7 @@ bool command_t::decode_frame(std::optional<std::pair<uint8_t *, uint8_t>> frame)
     frame_content += strlen(CMD_PREFIX);
     frame_content += strlen(" ");
 
-    static_assert(std::is_same_v<std::remove_reference_t<decltype(parameters[0])>, uint8_t>,
+    static_assert(std::is_same_v<std::remove_reference_t<decltype(parameters[0])>, uint16_t>,
                   "niezgodne typy parametrów komend");
     for (uint8_t i = 0; i < sizeof(parameters) && frame_content != nullptr && frame_content - base_ptr <= frame_size;
          i++)
