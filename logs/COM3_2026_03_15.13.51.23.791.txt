@@ -1,3 +1,82 @@
+//NOTE
+
+//druga próba wykonana w pierwszą niedzielę
+//pomiary wykonane od 0 do 320 BAR bez czekania na ostygnięcie butli
+//dla ostatnich dwóch/trzech pomiarów nie widziałem dobrze maonometru referencyjnego
+
+
+## 7. Rezystory dla poszczególnych układów IC
+
+### IC 1
+
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R16       | 402R    | T         |
+| Y1      | 2        | R15       | 1R      | T         |
+| Y2      | 3        | R13 + R14 | 8K      | T         |
+| Y3      | 4        | R17 + R18 | 804R    | T         |
+| Y4      | 5        | R10 + R12 | 20R     | T         |
+| Y5      | 6        | R8  + R9  | 2K      | T         |
+| Y6      | 7        | R11       | 10R     | T         |
+| Y7      | 8        | R7        | 5R      | T         |
+
+### IC 3
+
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R21       | 120R    | T         |
+| Y1      |          |           |         |           |
+| Y2      |          |           |         |           |
+| Y3      | 4        | R22       | 348R    |           |
+
+### IC 4
+
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R29       | 120R    | T         |
+| Y1      |          |           |         |           |
+| Y2      |          |           |         |           |
+| Y3      | 4        | R30       | 348R    |           |
+
+### IC 7
+
+| Wyjście | Parametr | Rezystory                      | Wartość | pass/fail |
+| ------- | -------- | ------------------------------ | ------- | --------- |
+| Y0      | 9        | R31 + S9                       | 120R    | T         |
+| Y1      | 10       | T1 - naklejony na pustej butli | 120R    | T         |
+| Y2      | 11       | T2                             | 120R    | T         |
+| Y3      | 12       | R32 + S10                      | 348R    |           |
+| Y4      | 13       | T4                             | 120R    | T         |
+| Y5      | 14       | T5                             | 120R    | T         |
+| Y6      | 15       | T8                             | 350R    | T         |
+
+
+### IC 8
+
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        |           |         | F         |
+| Y1      | 2        |           |         | F         |
+| Y2      | 3        |           |         | F         |
+| Y3      | 4        |           |         | F         |
+| Y4      | 5        |           |         | F         |
+
+
+### IC 9
+
+| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
+| ------- | -------- | --------- | ------- | --------- |
+| Y0      | 1        | R35 + S11 | 120R    | T         |
+| Y1      |          |           |         |           |
+| Y2      | 3        | T3        | 120R    | T         |
+| Y3      | 4        | R36 + S12 | 348R    |           |
+| Y4      | 5        | T6        | 120R    | T         |
+| Y5      | 6        |           |         | F         |
+| Y6      | 7        | T7        | 120R    | T         |
+| Y7      | 8        |           |         | F         |
+
+
+
 Scheduling measurement
 Command executed with result: 1
 Scheduling measurement
@@ -210,7 +289,7 @@ Measurement result: -1789809 for configuration: interface:hx711, parameters: 14,
 Measurement result: 1306 for configuration: interface:adc_opamp, parameters: 14, 7, 1, 1, 7, 
 Measurement result: -2549969 for configuration: interface:hx711, parameters: 14, 7, 1, 1, 1, 
 Command executed with result: 1
-Executing scheduled measurements for reference preassure: 300
+Executing scheduled measurements for reference preassure: 320
 Measurement result: -335 for configuration: interface:adc_opamp, parameters: 10, 3, 1, 1, 7, 
 Measurement result: 627466 for configuration: interface:hx711, parameters: 10, 3, 1, 1, 1, 
 Measurement result: 2559 for configuration: interface:adc_opamp, parameters: 11, 3, 1, 1, 7, 

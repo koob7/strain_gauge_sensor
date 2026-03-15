@@ -1,3 +1,9 @@
+//NOTE
+//Pierwsze zebrane logi z czujnika T1 naklejonym na butlę pełną
+//logi zbierane bez manometru referencyjnego
+//Początkowo logi zbierałem na czujniku który nie istniał
+//Dopiero pod koniec to zauważyłem i zmieniłem na czujnik T1
+
 Restoring serialized commands
 Scheduling measurement
 Scheduling measurement

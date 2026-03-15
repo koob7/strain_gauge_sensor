@@ -1,0 +1,16 @@
+00:23:15:340 -> Executing scheduled measurements for reference preassure: 0
+00:23:15:541 -> Measurement result: -164 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+00:23:15:743 -> Measurement result: 1114 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+00:23:16:574 -> Measurement result: 461102 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+00:23:17:405 -> Measurement result: -3459108 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+00:23:17:505 -> Command executed with result: 1
+00:23:21:060 -> Executing scheduled measurements for reference preassure: 100
+00:23:21:263 -> Measurement result: -161 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+00:23:21:464 -> Measurement result: 1107 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+00:23:22:295 -> Measurement result: 461511 for configuration: interface:hx711, parameters: 9, 1, 1, 1, 1, 
+00:23:23:126 -> Measurement result: -3462556 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+00:23:23:225 -> Command executed with result: 1
+00:23:27:770 -> Executing scheduled measurements for reference preassure: 0
+00:23:27:972 -> Measurement result: -164 for configuration: interface:adc_opamp, parameters: 9, 1, 1, 1, 7, 
+00:23:28:173 -> Measurement result: 1110 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 7, 
+

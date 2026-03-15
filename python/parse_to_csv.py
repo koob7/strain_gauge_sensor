@@ -4,12 +4,12 @@ from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.plotting import figure, show, output_file
-from bokeh.palettes import Category10
+from bokeh.palettes import turbo
 from bokeh.models import Range1d, WheelZoomTool, BoxZoomTool
 
 
 # foldery
-input_folder = Path("../logs")
+input_folder = Path("../ready_logs")
 csv_folder = Path("../csv")
 chart_folder = Path("../chart")
 
@@ -116,7 +116,7 @@ for input_file in input_folder.glob("*.txt"):
     # Aktywacja scrolla i box zoom
     p.toolbar.active_scroll = wheel_zoom_y  
 
-    colors = Category10[10]
+    colors = turbo(30)
 
     for i, key in enumerate(all_keys):
         x_vals = []
