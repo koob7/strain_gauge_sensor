@@ -57,18 +57,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define MULTI7_E_Pin GPIO_PIN_13
-#define MULTI7_E_GPIO_Port GPIOC
-#define MULTI7_S1_Pin GPIO_PIN_14
+#define MULTI7_S1_Pin GPIO_PIN_13
 #define MULTI7_S1_GPIO_Port GPIOC
-#define MULTI7_S2_Pin GPIO_PIN_15
+#define MULTI7_S2_Pin GPIO_PIN_14
 #define MULTI7_S2_GPIO_Port GPIOC
-#define MULTI7_S3_Pin GPIO_PIN_0
-#define MULTI7_S3_GPIO_Port GPIOF
-#define MULTI8_E_Pin GPIO_PIN_1
+#define MULTI7_S3_Pin GPIO_PIN_15
+#define MULTI7_S3_GPIO_Port GPIOC
+#define MULTI8_E_Pin GPIO_PIN_0
 #define MULTI8_E_GPIO_Port GPIOF
-#define MULTI8_S1_Pin GPIO_PIN_10
-#define MULTI8_S1_GPIO_Port GPIOG
+#define MULTI8_S1_Pin GPIO_PIN_1
+#define MULTI8_S1_GPIO_Port GPIOF
 #define MULTI8_S2_Pin GPIO_PIN_0
 #define MULTI8_S2_GPIO_Port GPIOC
 #define MULTI8_S3_Pin GPIO_PIN_1
@@ -89,6 +87,8 @@ void Error_Handler(void);
 #define ADC1_INM_GPIO_Port GPIOB
 #define ADC1_INP_Pin GPIO_PIN_1
 #define ADC1_INP_GPIO_Port GPIOB
+#define MULTI7_E_Pin GPIO_PIN_2
+#define MULTI7_E_GPIO_Port GPIOB
 #define MULTI1_E_Pin GPIO_PIN_11
 #define MULTI1_E_GPIO_Port GPIOB
 #define MULTI1_S1_Pin GPIO_PIN_12
