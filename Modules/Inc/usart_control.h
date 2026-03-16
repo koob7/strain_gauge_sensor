@@ -34,7 +34,7 @@ class usart_control_t : public device_t
 
     bool init() override;
     void handle() override {}
-    bool execute_command(command_t command) override;
+    bool execute_command(command_t command, [[maybe_unused]] uint16_t internal_parm = 0) override;
 
     void dma_rx_irq(UART_HandleTypeDef *irq_huart);
     void dma_tx_irq(UART_HandleTypeDef *irq_huart);

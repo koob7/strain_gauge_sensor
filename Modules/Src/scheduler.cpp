@@ -7,6 +7,7 @@
 #include "hx711.h"
 #include "multiplekser.h"
 #include "scheduler.h"
+#include "serializer.h"
 #include "usart_control.h"
 
 scheduler_t *g_scheduler = nullptr;
@@ -59,7 +60,7 @@ void scheduler_t::handle()
     }
 }
 
-bool scheduler_t::execute_command(command_t command)
+bool scheduler_t::execute_command(command_t command, [[maybe_unused]] uint16_t internal_parm)
 {
     using code_t   = command_t::command_code_t;
     using layout_t = command_t::default_command_layout_t;
@@ -134,11 +135,18 @@ bool scheduler_t::execute_command(command_t command)
     case as_int(code_t::SERIALIZE_COMMANDS):
     {
         g_usart_control->send_frame("Serializing scheduled commands\n");
+
+        if (command.parameters[1] >= NUMBER_OF_USER_PAGES)
+        {
+            return false;
+        }
+
         bool result = true;
-        if (command.parameters[1] == 1)
+        if (command.parameters[2] == 1)
         {
             command_t clear_flash;
             clear_flash.parameters[as_int(layout_t::COMMAND_ID)] = as_int(code_t::ERASE_FLASH);
+            clear_flash.parameters[1]                            = command.parameters[1];
 
             result |= g_device_modules[as_int(device_t::module_id_t::SERIALIZER)]->execute_command(clear_flash);
         }
@@ -151,7 +159,8 @@ bool scheduler_t::execute_command(command_t command)
         for (std::list<command_t>::iterator it = scheduled_commands.begin(); it != scheduled_commands.end(); ++it)
         {
             (*it).parameters[as_int(layout_t::COMMAND_ID)] = as_int(code_t::SAVE_COMMAND_TO_FLASH);
-            result |= g_device_modules[as_int(device_t::module_id_t::SERIALIZER)]->execute_command(*it);
+            result |= g_device_modules[as_int(device_t::module_id_t::SERIALIZER)]->execute_command(
+                *it, command.parameters[1]);
         }
 
         return result;

@@ -24,9 +24,9 @@ class device_t
     device_t() = delete;
     device_t(module_id_t id) : module_id(id), state(state_t::INIT) { register_module(); }
 
-    virtual bool init() = 0;
+    virtual bool init()   = 0;
     virtual void handle() = 0;
-    virtual bool execute_command(command_t command) { return false; }
+    virtual bool execute_command(command_t command, [[maybe_unused]] uint16_t internal_parm = 0) { return false; }
     void error_handler();
     state_t const get_state() { return state; }
     module_id_t const get_module_id() { return module_id; }

@@ -13,14 +13,19 @@ bool serializer_t::init()
     state       = state_t::READY;
     bool result = true;
 
-    addres_to_store_next_command = find_addres_to_store_next_command();
-    if (addres_to_store_next_command == 0 || addres_to_store_next_command < flash_storage_addres_start ||
-        addres_to_store_next_command >= flash_storage_addres_end)
+    for (uint8_t i = 0; i < NUMBER_OF_USER_PAGES; i++)
     {
-        command_t clear_flash;
-        clear_flash.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)] =
-            as_int(command_t::command_code_t::ERASE_FLASH);
-        result = execute_command(clear_flash); // ERASE_FLASH command set addres_to_store_next_command
+        addres_to_store_next_command[i] = find_addres_to_store_next_command(i);
+
+        if (addres_to_store_next_command[i] == 0 || addres_to_store_next_command[i] < FLASH_PAGE_ADDRESS_START(i) ||
+            addres_to_store_next_command[i] >= FLASH_PAGE_ADDRESS_END(i))
+        {
+            command_t clear_flash;
+            clear_flash.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)] =
+                as_int(command_t::command_code_t::ERASE_FLASH);
+            clear_flash.parameters[1] = i;
+            result &= execute_command(clear_flash); // ERASE_FLASH command set addres_to_store_next_command
+        }
     }
 
     if (!result)
@@ -33,26 +38,13 @@ bool serializer_t::init()
 void serializer_t::handle()
 {
 
-    if (state == state_t::READY)
+    if (state != state_t::READY)
     {
-        return;
-    }
-
-    state       = state_t::READY; // READY state is required to execute command
-    bool result = true;
-    command_t clear_flash;
-    clear_flash.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)] =
-        as_int(command_t::command_code_t::ERASE_FLASH);
-
-    result = execute_command(clear_flash);
-
-    if (!result)
-    {
-        state = state_t::ERROR;
+        Error_Handler();
     }
 }
 
-bool serializer_t::execute_command(command_t command)
+bool serializer_t::execute_command(command_t command, [[maybe_unused]] uint16_t internal_parm)
 {
     using code_t   = command_t::command_code_t;
     using layout_t = command_t::default_command_layout_t;
@@ -66,8 +58,16 @@ bool serializer_t::execute_command(command_t command)
     {
     case as_int(code_t::SAVE_COMMAND_TO_FLASH):
     {
+        uint8_t page_number = internal_parm;
+
+        if (page_number >= NUMBER_OF_USER_PAGES)
+        {
+            return false;
+        }
+
         g_usart_control->send_frame("Saving command to flash\n");
-        if (addres_to_store_next_command + flash_layout_t::layout_size >= flash_storage_addres_end)
+        if (addres_to_store_next_command[page_number] + flash_layout_t::layout_size >=
+            FLASH_PAGE_ADDRESS_END(page_number))
             return false;
 
         uint32_t crc_result =
@@ -78,8 +78,8 @@ bool serializer_t::execute_command(command_t command)
         flash_layout.command = command;
 
         std::optional<uint32_t> result;
-        result = write_memory_to_flash(addres_to_store_next_command, reinterpret_cast<uint8_t *>(&flash_layout),
-                                       flash_layout.layout_size)
+        result = write_memory_to_flash(addres_to_store_next_command[page_number],
+                                       reinterpret_cast<uint8_t *>(&flash_layout), flash_layout.layout_size)
                      .value();
 
         if (!result.has_value())
@@ -88,17 +88,24 @@ bool serializer_t::execute_command(command_t command)
             return false;
         }
 
-        addres_to_store_next_command = result.value();
+        addres_to_store_next_command[page_number] = result.value();
         return true;
     }
 
     case as_int(code_t::RESTORE_SERIALIZED_COMMANDS):
     {
+        uint8_t page_number = command.parameters[1];
+
+        if (page_number >= NUMBER_OF_USER_PAGES)
+        {
+            return false;
+        }
+
         g_usart_control->send_frame("Restoring serialized commands\n");
         bool result = true;
 
         // if parameter 2 is equal to 1 then we remove already scheduled command
-        if (command.parameters[1] == 1)
+        if (command.parameters[2] == 1)
         {
             command_t remove_command;
             remove_command.parameters[as_int(layout_t::COMMAND_ID)] = as_int(code_t::REMOVE_SCHEDULED_MEASUREMENTS);
@@ -119,8 +126,8 @@ bool serializer_t::execute_command(command_t command)
 
         flash_layout_t flash_layout;
 
-        uint32_t read_addres = flash_storage_addres_start;
-        while (read_addres <= flash_storage_addres_end)
+        uint32_t read_addres = FLASH_PAGE_ADDRESS_START(page_number);
+        while (read_addres <= FLASH_PAGE_ADDRESS_END(page_number))
         {
             result &=
                 read_from_flash(read_addres, reinterpret_cast<uint8_t *>(&flash_layout), flash_layout_t::layout_size);
@@ -165,43 +172,24 @@ bool serializer_t::execute_command(command_t command)
 
     case as_int(code_t::ERASE_FLASH):
     {
-        g_usart_control->send_frame("Erasing flash\n");
-        std::optional<std::pair<uint32_t, uint32_t>> flash_pages =
-            calculate_pages_to_erase(flash_storage_addres_start, flash_storage_addres_end - 1);
+        uint8_t page_number = command.parameters[1];
 
-        if (!flash_pages.has_value())
+        if (page_number > NUMBER_OF_USER_PAGES)
         {
             return false;
         }
 
-        FLASH_EraseInitTypeDef erase;
-        erase.TypeErase = FLASH_TYPEERASE_PAGES;
-        erase.Page      = flash_pages.value().first;
-        erase.NbPages   = flash_pages.value().second;
-
-        uint32_t page_error;
-
-        HAL_FLASH_Unlock();
-        HAL_StatusTypeDef erase_status = HAL_FLASHEx_Erase(&erase, &page_error);
-        HAL_FLASH_Lock();
-
-        if (erase_status != HAL_OK && page_error != 0xFFFFFFFF)
+        if (page_number == NUMBER_OF_USER_PAGES)
         {
-            state = state_t::ERROR;
-            return false;
+            bool result = true;
+            for (uint8_t i = 0; i < NUMBER_OF_USER_PAGES; i++)
+            {
+                result &= erase_single_page(i);
+            }
+            return result;
         }
 
-        uint32_t empty_address = find_addres_to_store_next_command();
-
-        if (empty_address != flash_storage_addres_start)
-        {
-            state = state_t::ERROR;
-            return false;
-        }
-
-        addres_to_store_next_command = flash_storage_addres_start;
-
-        return true;
+        return erase_single_page(page_number);
     }
 
     default:
@@ -242,16 +230,16 @@ std::optional<std::pair<uint32_t, uint32_t>> serializer_t::calculate_pages_to_er
     }
 
     // we assume dual bank is dissabled so page size is 2KB
-    uint32_t first_page      = (start_address - flash_base) / page_size;
-    uint32_t last_page       = (end_address - flash_base) / page_size;
+    uint32_t first_page      = (start_address - flash_base) / PAGE_SIZE;
+    uint32_t last_page       = (end_address - flash_base) / PAGE_SIZE;
     uint32_t number_of_pages = last_page - first_page + 1;
 
     return std::make_pair(first_page, number_of_pages);
 }
 
-uint32_t serializer_t::find_addres_to_store_next_command()
+uint32_t serializer_t::find_addres_to_store_next_command(uint16_t page_number)
 {
-    uint32_t current_addres = flash_storage_addres_start;
+    uint32_t current_addres = FLASH_PAGE_ADDRESS_START(page_number);
 
     if (current_addres % 8 != 0)
     {
@@ -267,7 +255,7 @@ uint32_t serializer_t::find_addres_to_store_next_command()
 
     flash_layout_t dummy_reading;
 
-    while (current_addres + flash_layout_t::layout_size < flash_storage_addres_end)
+    while (current_addres + flash_layout_t::layout_size < FLASH_PAGE_ADDRESS_END(page_number))
     {
         dummy_reading = *reinterpret_cast<flash_layout_t *>(current_addres);
         if (memcmp(&dummy_reading, &FF_layout, flash_layout_t::layout_size) == 0)
@@ -279,6 +267,9 @@ uint32_t serializer_t::find_addres_to_store_next_command()
     }
 
     if (current_addres + flash_layout_t::layout_size >= flash_storage_addres_end)
+        return 0;
+
+    if (current_addres + flash_layout_t::layout_size >= FLASH_PAGE_ADDRESS_END(page_number))
         return 0;
 
     if (current_addres % 8 != 0)
@@ -359,6 +350,63 @@ std::optional<uint32_t> serializer_t::write_memory_to_flash(uint32_t flash_addre
     }
 
     return result;
+}
+
+bool serializer_t::erase_memory(uint32_t start_addres, uint32_t end_addres)
+{
+    g_usart_control->send_frame("Erasing flash from 0x%08X to 0x%08X\n", start_addres, end_addres);
+
+    std::optional<std::pair<uint32_t, uint32_t>> flash_pages = calculate_pages_to_erase(start_addres, end_addres);
+
+    if (!flash_pages.has_value())
+    {
+        return false;
+    }
+
+    FLASH_EraseInitTypeDef erase;
+    erase.TypeErase = FLASH_TYPEERASE_PAGES;
+    erase.Page      = flash_pages.value().first;
+    erase.NbPages   = flash_pages.value().second;
+
+    uint32_t page_error;
+
+    HAL_FLASH_Unlock();
+    HAL_StatusTypeDef erase_status = HAL_FLASHEx_Erase(&erase, &page_error);
+    HAL_FLASH_Lock();
+
+    if (erase_status != HAL_OK && page_error != 0xFFFFFFFF)
+    {
+        state = state_t::ERROR;
+        return false;
+    }
+
+    g_usart_control->send_frame("Erasing succes\n");
+    return true;
+}
+
+bool serializer_t::erase_single_page(uint16_t page_number)
+{
+    if (page_number > NUMBER_OF_USER_PAGES + 1)
+    {
+        return false;
+    }
+
+    if (!erase_memory(FLASH_PAGE_ADDRESS_START(page_number), FLASH_PAGE_ADDRESS_END(page_number) - 1))
+    {
+        state = state_t::ERROR;
+        return false;
+    }
+
+    uint32_t empty_address = find_addres_to_store_next_command(page_number);
+
+    if (empty_address != FLASH_PAGE_ADDRESS_START(page_number))
+    {
+        state = state_t::ERROR;
+        return false;
+    }
+
+    addres_to_store_next_command[page_number] = empty_address;
+    return true;
 }
 
 /*-----------------------------------------------------*/

@@ -55,17 +55,19 @@ ENTRY(Reset_Handler)
 /* Specify the memory areas */
 
 FLASH_BASE = 0x08000000;
-PAGE_SIZE = 2048; /* jeden sektor to 2KB */
-USER_PAGES = 6;
+
+NUMBER_OF_USER_PAGES = 6;
+
+/* we assume dual bank is dissabled so page size is 2KB*/
+PAGE_SIZE = 2048;
 
 PROVIDE(__flash_base = FLASH_BASE);
-PROVIDE(__user_pages = USER_PAGES);
 PROVIDE(__page_size = PAGE_SIZE);
 
 
 /* WRONG - in dual mode page size is 2KB and 4KB i single mode */
 MEMORY_SIZE  = 512 * 1024;     /* bajty */
-USER_DATA_SIZE = USER_PAGES * PAGE_SIZE;    /* bajty */  
+USER_DATA_SIZE = NUMBER_OF_USER_PAGES * PAGE_SIZE;    /* bajty */  
 
 MEMORY
 {

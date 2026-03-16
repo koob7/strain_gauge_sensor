@@ -157,9 +157,10 @@ int main(void)
                 goto finish_receiving;
             }
 
-            for (uint8_t i = 0; i < command_t::num_of_internal_command; i++)
+            for (uint8_t i = 0; i < command_t::num_of_internal_commands; i++)
             {
-                if (as_int(command_t::internal_command[i]) ==
+                // Internal command schould not be called by user
+                if (as_int(command_t::internal_commands[i]) ==
                     command.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)])
                 {
                     goto finish_receiving;

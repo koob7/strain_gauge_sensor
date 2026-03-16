@@ -88,7 +88,7 @@ bool usart_control_t::init()
     return true;
 }
 
-bool usart_control_t::execute_command(command_t command)
+bool usart_control_t::execute_command(command_t command, [[maybe_unused]] uint16_t internal_parm)
 {
     switch (command.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)])
     {
