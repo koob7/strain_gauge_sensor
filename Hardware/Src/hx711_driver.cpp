@@ -17,12 +17,18 @@ bool hx711_driver_t::set_gain(gain_ranges_t gain_range)
 
     bool result = true;
 
-    if (!is_ready())
-        return false;
-
     result |= (read() != 0);
+
+    uint32_t start = HAL_GetTick();
+
+    // power down shouldbe executed after current conversion period is completed to ensure that the change is saved
+    while (!is_ready() && (HAL_GetTick() - start) <= TIME_FOR_NEXT_CONVERSION)
+    {
+    }
+
     result |= power_down();
     result |= power_up();
+
     return result;
 }
 
@@ -89,6 +95,10 @@ long hx711_driver_t::read()
 
 bool hx711_driver_t::power_down()
 {
+    if (SLEEP_DENY)
+    {
+        return true;
+    }
 
     HAL_GPIO_WritePin(clock_line_port, clock_line_pin, GPIO_PIN_RESET);
     delay_us(FAST_PROCESOR_GAP);
