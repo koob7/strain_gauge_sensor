@@ -127,21 +127,21 @@ tab 3.
 
 ### IC 3
 
-| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
-| ------- | -------- | --------- | ------- | --------- |
-| Y0      | 1        | R21       | 120R    | T         |
-| Y1      |          |           |         |           |
-| Y2      |          |           |         |           |
-| Y3      | 4        | R22       | 348R    |           |
+| Wyjście | Parametr | Rezystory | Wartość    | pass/fail |
+| ------- | -------- | --------- | ---------- | --------- |
+| Y0      | 1        | R21       | 120R       | T         |
+| Y1      |          |           | wolne pady |           |
+| Y2      |          |           | wolne pady |           |
+| Y3      | 4        | R22       | 348R       | T         |
 
 ### IC 4
 
-| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
-| ------- | -------- | --------- | ------- | --------- |
-| Y0      | 1        | R29       | 120R    | T         |
-| Y1      |          |           |         |           |
-| Y2      |          |           |         |           |
-| Y3      | 4        | R30       | 348R    |           |
+| Wyjście | Parametr | Rezystory | Wartość    | pass/fail |
+| ------- | -------- | --------- | ---------- | --------- |
+| Y0      | 1        | R29       | 120R       | T         |
+| Y1      |          |           | wolne pady |           |
+| Y2      |          |           | wolne pady |           |
+| Y3      | 4        | R30       | 348R       | T         |
 
 ### IC 7
 
@@ -150,10 +150,11 @@ tab 3.
 | Y0      | 9        | R31 + S9                       | 120R    | T         |
 | Y1      | 10       | T1 - naklejony na pustej butli | 120R    | T         |
 | Y2      | 11       | T2                             | 120R    | T         |
-| Y3      | 12       | R32 + S10                      | 348R    |           |
+| Y3      | 12       | R32 + S10                      | 348R    | T         |
 | Y4      | 13       | T4                             | 120R    | T         |
 | Y5      | 14       | T5                             | 120R    | T         |
 | Y6      | 15       | T8                             | 350R    | T         |
+| Y6      | 16       |                                | wolne   | T         |
 
 
 ### IC 8
@@ -169,14 +170,14 @@ tab 3.
 
 ### IC 9
 
-| Wyjście | Parametr | Rezystory | Wartość | pass/fail |
-| ------- | -------- | --------- | ------- | --------- |
-| Y0      | 1        | R35 + S11 | 120R    | T         |
-| Y1      |          |           |         |           |
-| Y2      | 3        | T3        | 120R    | T         |
-| Y3      | 4        | R36 + S12 | 348R    |           |
-| Y4      | 5        | T6        | 120R    | T         |
-| Y5      | 6        |           |         | F         |
-| Y6      | 7        | T7        | 120R    | T         |
-| Y7      | 8        |           |         | F         |
+| Wyjście | Parametr | Rezystory | Wartość    | pass/fail |
+| ------- | -------- | --------- | ---------- | --------- |
+| Y0      | 1        | R35 + S11 | 120R       | T         |000
+| Y1      |          |           | wolne pady |           |001
+| Y2      | 3        | T3        | 120R       | T         |010
+| Y3      | 4        | R36 + S12 | 348R       | F         |011
+| Y4      | 5        | T6        | 120R       | T         |100
+| Y5      | 6        |           |            | F         |101
+| Y6      | 7        | T7        | 120R       | T         |110
+| Y7      | 8        |           |            | F         |111
 
