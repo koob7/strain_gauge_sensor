@@ -15,6 +15,7 @@ add_library(modules STATIC
     Src/adc_opamp.cpp
     Src/hx711.cpp
     Src/command.cpp
+    Src/temp_module.cpp
 )
 
 target_include_directories(modules PUBLIC

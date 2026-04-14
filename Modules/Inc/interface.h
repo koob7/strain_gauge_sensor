@@ -15,6 +15,7 @@ class interface_t
         HX711     = 0,
         ADC_OPAMP = 1,
         ADC       = 2,
+        TEMP      = 3,
 
         // must be last
         INTERFACE_NUMBER,

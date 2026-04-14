@@ -36,11 +36,14 @@ bool multiplekser_t::deactivate_multiplekser()
  */
 bool multiplekser_t::config_output_channel(uint8_t output_channel)
 {
-    if (output_channel == 0 || output_channel > multiplekser_outputs)
+    if (output_channel > multiplekser_outputs)
         return false;
 
     if (!deactivate_multiplekser())
         return false;
+
+    if (output_channel == 0)
+        return true;
 
     if (!config_pin_pointers(output_channel))
         return false;

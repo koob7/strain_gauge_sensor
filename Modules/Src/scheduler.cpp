@@ -8,6 +8,7 @@
 #include "multiplekser.h"
 #include "scheduler.h"
 #include "serializer.h"
+#include "temp_module.h"
 #include "usart_control.h"
 
 scheduler_t *g_scheduler = nullptr;
@@ -18,6 +19,7 @@ bool scheduler_t::init()
     static hx711_t hx711(interface_t::interface_id_t::HX711);
     static adc_opamp_t adc_opamp(interface_t::interface_id_t::ADC_OPAMP);
     static adc_t adc(interface_t::interface_id_t::ADC);
+    static adc_temp_t adc_temp(interface_t::interface_id_t::TEMP);
 
     bool result = true;
 
