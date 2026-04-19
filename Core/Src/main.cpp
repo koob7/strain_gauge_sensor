@@ -25,6 +25,7 @@
 #include "opamp.h"
 #include "usart.h"
 
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "cstring"
@@ -173,17 +174,6 @@ int main(void)
             }
 
         finish_receiving:
-
-            if (result)
-            {
-                uint32_t start = HAL_GetTick();
-
-                while (HAL_GetTick() < start + 100)
-                {
-                    HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
-                }
-                HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_SET);
-            }
 
             g_usart_control->send_frame("Command executed with result: %d\n", result);
             g_usart_control->receive_frame();

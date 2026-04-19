@@ -11,7 +11,7 @@
 class usart_control_t : public device_t
 {
   private:
-    static constexpr uint16_t BUFFER_SIZE           = 100;
+    static constexpr uint16_t BUFFER_SIZE           = 200;
     static constexpr uint64_t TIMEOUT_TRUST_FACTOR  = 12;
     static constexpr uint64_t DIVIDER_HELPER_FACTOR = 1000000000000ULL;
     static constexpr uint64_t TIMEOUT_TRUST_DIVIDER = 10;

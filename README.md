@@ -64,6 +64,8 @@ Efektem działania skryptu będzie:
 - Wstępna przetwornica napięcia wejściowego.
 - Zewnętrzne układy **op-amp**.
 - Zmienić złacze zasilające na standardowe wymiary
+- poprawić zasilanie VCC / AVCC - VREF+ powinien być super stabilny i odcięty od AVDD
+- układ rozładowywania AVCC
 
 
 ## 4. Typy interfejsów
@@ -73,6 +75,7 @@ Efektem działania skryptu będzie:
 | 0   | HX711     |
 | 1   | ADC_OPAMP |
 | 2   | ADC       |
+| 3   | TEMP      |
 
 tab 1.
 
@@ -162,7 +165,7 @@ tab 3.
 | Y4      | 13       | T4                             | 120R    | T         |
 | Y5      | 14       | T5                             | 120R    | T         |
 | Y6      | 15       | T8                             | 350R    | T         |
-| Y6      | 16       |                                | wolne   | T         |
+| Y7      | 16       | Termpoara 1                    | -       | T         |
 
 
 ### IC 8
@@ -184,11 +187,11 @@ tab 3.
 | Wyjście | Parametr | Rezystory | Wartość | pass/fail |
 | ------- | -------- | --------- | ------- | --------- |
 | Y0      | 1        | R35 + S11 | 120R    | T         |
-| Y1      |          | R39 + S13 | 10K R   |           |
+| Y1      | 2        | R39 + S13 | 10K R   |           |
 | Y2      | 3        | T3        | 120R    | T         |
 | Y3      | 4        | R36 + S12 | 348R    | T         |
 | Y4      | 5        | T6        | 120R    | T         |
 | Y5      | 6        |           |         | T         |
 | Y6      | 7        | T7        | 120R    | T         |
-| Y7      | 8        |           |         | T         |
+| Y7      | 8        | T9        |         | T         |
 

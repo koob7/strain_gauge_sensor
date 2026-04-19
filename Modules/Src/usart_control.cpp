@@ -100,11 +100,19 @@ bool usart_control_t::execute_command(command_t command, [[maybe_unused]] uint16
 
 void usart_control_t::dma_rx_irq(UART_HandleTypeDef *irq_huart)
 {
-    LL_USART_DisableDirectionRx(huart->Instance);
     if (irq_huart != huart)
     {
         return;
     }
+
+    if (irq_huart->RxEventType != HAL_UART_RXEVENT_IDLE)
+    {
+        // DMA callback on half full buffer
+        return;
+    }
+
+    LL_USART_DisableDirectionRx(huart->Instance);
+
     is_receiving  = false;
     data_received = true;
 }

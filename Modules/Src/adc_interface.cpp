@@ -42,6 +42,9 @@ int32_t adc_interface_t::read_bridge_voltage()
     status |= HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
     int32_t adc_2_value = HAL_ADC_GetValue(&hadc); // Bridge out 2
 
+    // NOTE
+    // we do not have exact voltage values here but only real difference ration between them
+    // if real voltage is required, pleas refer to temp module where we use VREF+ to get it
     int32_t bridge_difference = adc_2_value - adc_1_value;
 
     return status == as_int(HAL_StatusTypeDef::HAL_OK) ? bridge_difference : -1;

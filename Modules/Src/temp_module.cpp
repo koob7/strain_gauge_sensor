@@ -20,20 +20,23 @@ int32_t adc_temp_t::read_bridge_voltage()
     status |= as_int(configure_adc_channel(bridge_out_1_channel));
     status |= HAL_ADC_Start(&hadc);
     status |= HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
-    int32_t adc_1_value = HAL_ADC_GetValue(&hadc); // Bridge out 1
+    int32_t raw_adc_1_value = HAL_ADC_GetValue(&hadc); // Bridge out 1
 
     status |= HAL_ADC_Stop(&hadc);
     status |= as_int(configure_adc_channel(bridge_out_2_channel));
     status |= HAL_ADC_Start(&hadc);
     status |= HAL_ADC_PollForConversion(&hadc, HAL_MAX_DELAY);
-    int32_t adc_2_value = HAL_ADC_GetValue(&hadc); // Bridge out 2
+    int32_t raw_vref_plus = HAL_ADC_GetValue(&hadc); // RAW VREF+
 
-    if (status != as_int(HAL_StatusTypeDef::HAL_OK))
+    if (status != as_int(HAL_StatusTypeDef::HAL_OK) || raw_adc_1_value < 0 || raw_vref_plus < 0)
     {
         return INT32_MIN;
     }
 
-    int32_t resistance = convert_voltage_to_resistane(adc_1_value, adc_2_value, helper_resistance);
+    int32_t vref_plus   = __LL_ADC_CALC_VREFANALOG_VOLTAGE(raw_vref_plus, hadc.Init.Resolution);
+    int32_t adc_1_value = __LL_ADC_CALC_DATA_TO_VOLTAGE(vref_plus, raw_adc_1_value, hadc.Init.Resolution);
+
+    int32_t resistance = convert_voltage_to_resistane(adc_1_value, vref_plus, helper_resistance);
     if (resistance < 0)
         return INT32_MIN;
 
@@ -79,7 +82,7 @@ int32_t adc_temp_t::convert_resistance_to_temperature(int32_t resistance)
 
     for (int i = 0; i < TABLE_SIZE - 1; i++)
     {
-        if (resistance > resistance_table[i] && resistance <= resistance_table[i + 1])
+        if (resistance > resistance_table[i + 1] && resistance <= resistance_table[i])
         {
             int32_t base_temp    = MIN_TEMPERATURE + i * TABLE_STEP;
             int32_t precise_temp = (((resistance - resistance_table[i]) * TABLE_STEP * helper) /
