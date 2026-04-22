@@ -3,10 +3,10 @@
 
 #pragma once
 
-#define _ms *1000
-#define _s *1000
-#define _min *60_s
-#define _h *60_min
+#define MS_TO_US 1000
+#define SEC_TO_MS 1000
+#define MIN_TO_SEC 60
+#define HOUR_TO_MIN 60
 
 enum class state_t : uint8_t
 {

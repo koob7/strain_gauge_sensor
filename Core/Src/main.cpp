@@ -23,8 +23,8 @@
 #include "dma.h"
 #include "gpio.h"
 #include "opamp.h"
+#include "tim.h"
 #include "usart.h"
-
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -110,6 +110,7 @@ int main(void)
     MX_CRC_Init();
     MX_ADC1_Init();
     MX_ADC2_Init();
+    MX_TIM1_Init();
     /* USER CODE BEGIN 2 */
 
     init_dwt();
@@ -117,7 +118,7 @@ int main(void)
     static usart_control_t usart_control_instance(device_t::module_id_t::USER_MESSENGER, &huart1);
     g_usart_control = &usart_control_instance;
 
-    static scheduler_t scheduler_instance(device_t::module_id_t::SCHEDULER);
+    static scheduler_t scheduler_instance(device_t::module_id_t::SCHEDULER, &htim1);
     g_scheduler = &scheduler_instance;
 
     static serializer_t serializer_instance(device_t::module_id_t::SERIALIZER);
@@ -228,7 +229,7 @@ void SystemClock_Config(void)
     RCC_ClkInitStruct.SYSCLKSource   = RCC_SYSCLKSOURCE_PLLCLK;
     RCC_ClkInitStruct.AHBCLKDivider  = RCC_SYSCLK_DIV1;
     RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV16;
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
     {
@@ -237,6 +238,11 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+extern "C" void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    g_scheduler->scheduler_timer.elapsed_interrupt(htim);
+}
 
 extern "C" void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) { g_usart_control->dma_tx_irq(huart); }
 

@@ -16,6 +16,7 @@ add_library(modules STATIC
     Src/hx711.cpp
     Src/command.cpp
     Src/temp_module.cpp
+    Src/timmer_interface.cpp
 )
 
 target_include_directories(modules PUBLIC

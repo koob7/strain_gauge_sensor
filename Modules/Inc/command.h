@@ -51,6 +51,7 @@ class command_t
         RESTORE_SERIALIZED_COMMANDS   = 7,
         ERASE_FLASH                   = 8,
         PRINT_SCHEDULED_COMMANDS      = 9,
+        PERIODIC_MEASUREMENTS         = 10,
     };
 
     // dummy static assert, just to learn something and enjoy coding

@@ -1,12 +1,15 @@
 #include "temp_module.h"
+#include "usart_control.h"
 
 const char *adc_temp_t::get_char_name() { return "adc temperature"; }
 bool adc_temp_t::low_level_wake_up() { return true; }
 bool adc_temp_t::low_level_configuration(uint8_t param)
 {
     if (param == 0)
+    {
+        g_usart_control->send_frame("wrong multiplier\n");
         return false;
-
+    }
     helper_resistance = param * KOHM_TO_OHM;
     return true;
 }

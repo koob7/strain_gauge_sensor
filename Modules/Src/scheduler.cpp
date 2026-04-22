@@ -60,6 +60,17 @@ void scheduler_t::handle()
 
         state = state_t::READY;
     }
+
+    if (pending_execution)
+    {
+        pending_execution = false;
+
+        command_t command;
+        command.parameters[as_int(command_t::default_command_layout_t::COMMAND_ID)] =
+            as_int(command_t::command_code_t::EXECUTE_MEASUREMENTS);
+
+        execute_command(command);
+    }
 }
 
 bool scheduler_t::execute_command(command_t command, [[maybe_unused]] uint16_t internal_parm)
@@ -168,9 +179,36 @@ bool scheduler_t::execute_command(command_t command, [[maybe_unused]] uint16_t i
         return result;
     }
 
+    case as_int(code_t::PERIODIC_MEASUREMENTS):
+    {
+        if (command.parameters[1] == 0) // disable timer
+        {
+            pending_execution = false;
+            scheduler_timer.stop_timer();
+        }
+        else if (command.parameters[1] == 1) // enable timer
+        {
+            uint32_t period_us = command.parameters[2] * SEC_TO_MS * MS_TO_US; // time parsed seconds
+            scheduler_timer.set_timer_period(period_us);
+            scheduler_timer.start_timer();
+        }
+        else
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     default:
         return false;
     }
 
     return false;
+}
+
+void scheduler_t::elapsed_callback(void *context)
+{
+    scheduler_t *scheduler_p       = static_cast<scheduler_t *>(context);
+    scheduler_p->pending_execution = true;
 }
