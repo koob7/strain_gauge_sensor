@@ -1,0 +1,978 @@
+drugi test rono
+butla nabita do 4 bar
+
+08:50:45:849 -> Executing scheduled measurements for reference preassure: 0
+08:50:46:050 -> Measurement result: 43857 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:50:46:451 -> Measurement result: 16 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:50:46:654 -> Measurement result: -6239022 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:50:47:263 -> Measurement result: -4043323 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:50:47:272 -> Command executed with result: 1
+08:50:49:186 -> Executing scheduled measurements for reference preassure: 0
+08:50:49:387 -> Measurement result: 43835 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:50:49:799 -> Measurement result: 17 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:50:50:423 -> Measurement result: -8028684 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:50:51:031 -> Measurement result: -4041596 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:50:51:041 -> Command executed with result: 1
+08:50:52:394 -> Executing scheduled measurements for reference preassure: 0
+08:50:52:594 -> Measurement result: 43806 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:50:52:995 -> Measurement result: 15 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:50:53:615 -> Measurement result: -8024245 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:50:54:225 -> Measurement result: -4039291 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:50:54:234 -> Command executed with result: 1
+08:50:55:971 -> Executing scheduled measurements for reference preassure: 0
+08:50:56:172 -> Measurement result: 43846 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:50:56:573 -> Measurement result: 16 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:50:57:153 -> Measurement result: -8018745 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:50:57:746 -> Measurement result: -4036878 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:50:57:757 -> Command executed with result: 1
+08:51:57:492 -> Executing scheduled measurements for reference preassure: 0
+08:51:57:692 -> Measurement result: 43653 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:51:58:093 -> Measurement result: 24 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:51:58:674 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:51:59:282 -> Measurement result: -6082830 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:51:59:293 -> Command executed with result: 1
+08:52:00:574 -> Executing scheduled measurements for reference preassure: 0
+08:52:00:775 -> Measurement result: 43613 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:52:01:176 -> Measurement result: 23 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:52:01:784 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:52:02:393 -> Measurement result: -6088066 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:52:02:404 -> Command executed with result: 1
+08:52:15:627 -> Executing scheduled measurements for reference preassure: 0
+08:52:15:828 -> Measurement result: 43505 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:52:16:243 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:52:16:827 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:52:17:436 -> Measurement result: -6984131 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:52:17:446 -> Command executed with result: 1
+08:52:33:929 -> Executing scheduled measurements for reference preassure: 0
+08:52:34:130 -> Measurement result: 43573 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:52:34:531 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:52:35:161 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:52:35:770 -> Measurement result: -7777564 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:52:35:780 -> Command executed with result: 1
+08:52:44:650 -> Executing scheduled measurements for reference preassure: 0
+08:52:44:850 -> Measurement result: 43693 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:52:45:251 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:52:45:842 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:52:46:451 -> Measurement result: -7801950 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:52:46:460 -> Command executed with result: 1
+08:52:57:925 -> Command executed with result: 1
+08:52:57:926 -> Executing scheduled measurements for reference preassure: 0
+08:52:58:112 -> Measurement result: 43693 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:52:58:513 -> Measurement result: 31 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:52:59:157 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:53:04:226 -> Measurement result: -7824800 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:55:57:481 -> Executing scheduled measurements for reference preassure: 0
+08:55:57:664 -> Measurement result: 43426 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:55:58:065 -> Measurement result: 31 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:55:58:710 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:55:59:319 -> Measurement result: -7882696 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+08:58:57:008 -> Executing scheduled measurements for reference preassure: 0
+08:58:57:208 -> Measurement result: 43056 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+08:58:57:608 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+08:58:58:189 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+08:58:58:798 -> Measurement result: -7881268 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:01:56:547 -> Executing scheduled measurements for reference preassure: 0
+09:01:56:748 -> Measurement result: 42824 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:01:57:148 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:01:57:750 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:01:58:360 -> Measurement result: -7875238 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:04:56:101 -> Executing scheduled measurements for reference preassure: 0
+09:04:56:302 -> Measurement result: 42538 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:04:56:703 -> Measurement result: 31 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:04:57:308 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:04:57:916 -> Measurement result: -7864251 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:07:55:629 -> Executing scheduled measurements for reference preassure: 0
+09:07:55:829 -> Measurement result: 42329 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:07:56:229 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:07:56:865 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:07:57:474 -> Measurement result: -7850154 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:10:55:144 -> Executing scheduled measurements for reference preassure: 0
+09:10:55:345 -> Measurement result: 42016 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:10:55:746 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:10:56:336 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:10:56:945 -> Measurement result: -7838440 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:13:54:646 -> Executing scheduled measurements for reference preassure: 0
+09:13:54:846 -> Measurement result: 41810 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:13:55:246 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:13:55:885 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:13:56:494 -> Measurement result: -7823489 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:16:54:154 -> Executing scheduled measurements for reference preassure: 0
+09:16:54:354 -> Measurement result: 41584 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:16:54:755 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:16:55:354 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:16:55:963 -> Measurement result: -7810214 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:19:53:660 -> Executing scheduled measurements for reference preassure: 0
+09:19:53:861 -> Measurement result: 41394 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:19:54:262 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:19:54:893 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:19:55:501 -> Measurement result: -7797083 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:22:53:165 -> Executing scheduled measurements for reference preassure: 0
+09:22:53:365 -> Measurement result: 41084 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:22:53:769 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:22:54:359 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:22:54:968 -> Measurement result: -7782988 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:25:52:621 -> Executing scheduled measurements for reference preassure: 0
+09:25:52:820 -> Measurement result: 40817 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:25:53:231 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:25:53:821 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:25:54:430 -> Measurement result: -7771146 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:28:52:062 -> Executing scheduled measurements for reference preassure: 0
+09:28:52:262 -> Measurement result: 40670 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:28:52:663 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:28:53:286 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:28:53:895 -> Measurement result: -7758157 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:31:51:506 -> Executing scheduled measurements for reference preassure: 0
+09:31:51:706 -> Measurement result: 40441 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:31:52:108 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:31:52:752 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:31:53:370 -> Measurement result: -7745240 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:34:50:953 -> Executing scheduled measurements for reference preassure: 0
+09:34:51:158 -> Measurement result: 40248 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:34:51:554 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:34:52:139 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:34:52:748 -> Measurement result: -7731469 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:37:50:397 -> Executing scheduled measurements for reference preassure: 0
+09:37:50:598 -> Measurement result: 40096 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:37:50:998 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:37:51:608 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:37:52:217 -> Measurement result: -7721331 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:40:49:820 -> Executing scheduled measurements for reference preassure: 0
+09:40:50:021 -> Measurement result: 39800 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:40:50:422 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:40:50:996 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:40:51:604 -> Measurement result: -7708442 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:43:49:253 -> Executing scheduled measurements for reference preassure: 0
+09:43:49:453 -> Measurement result: 39536 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:43:49:853 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:43:50:463 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:43:51:072 -> Measurement result: -7696626 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:46:48:714 -> Executing scheduled measurements for reference preassure: 0
+09:46:48:914 -> Measurement result: 39360 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:46:49:315 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:46:49:931 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:46:50:540 -> Measurement result: -7684631 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:49:48:160 -> Executing scheduled measurements for reference preassure: 0
+09:49:48:360 -> Measurement result: 39160 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:49:48:760 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:49:49:398 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:49:50:007 -> Measurement result: -7672918 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:52:47:601 -> Executing scheduled measurements for reference preassure: 0
+09:52:47:801 -> Measurement result: 38864 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:52:48:217 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:52:48:782 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:52:49:392 -> Measurement result: -7661261 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:55:47:046 -> Executing scheduled measurements for reference preassure: 0
+09:55:47:245 -> Measurement result: 38757 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:55:47:646 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:55:48:259 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:55:48:857 -> Measurement result: -7651323 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+09:58:46:500 -> Executing scheduled measurements for reference preassure: 0
+09:58:46:700 -> Measurement result: 38537 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+09:58:47:101 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+09:58:47:713 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+09:58:48:322 -> Measurement result: -7638685 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:01:45:954 -> Executing scheduled measurements for reference preassure: 0
+10:01:46:155 -> Measurement result: 38280 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:01:46:556 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:01:47:177 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:01:47:786 -> Measurement result: -7628631 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:04:45:401 -> Executing scheduled measurements for reference preassure: 0
+10:04:45:601 -> Measurement result: 38177 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:04:46:001 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:04:46:641 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:04:47:251 -> Measurement result: -7618791 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:07:44:851 -> Executing scheduled measurements for reference preassure: 0
+10:07:45:051 -> Measurement result: 37910 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:07:45:452 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:07:46:025 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:07:46:634 -> Measurement result: -7606572 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:10:44:277 -> Executing scheduled measurements for reference preassure: 0
+10:10:44:477 -> Measurement result: 37784 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:10:44:878 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:10:45:490 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:10:46:100 -> Measurement result: -7597380 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:13:43:706 -> Executing scheduled measurements for reference preassure: 0
+10:13:43:906 -> Measurement result: 37596 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:13:44:307 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:13:44:872 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:13:45:480 -> Measurement result: -7587679 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:16:43:163 -> Executing scheduled measurements for reference preassure: 0
+10:16:43:364 -> Measurement result: 37408 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:16:43:764 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:16:44:333 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:16:44:942 -> Measurement result: -7579279 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:19:42:649 -> Executing scheduled measurements for reference preassure: 0
+10:19:42:849 -> Measurement result: 37161 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:19:43:250 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:19:43:875 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:19:44:484 -> Measurement result: -7569420 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:22:42:126 -> Executing scheduled measurements for reference preassure: 0
+10:22:42:326 -> Measurement result: 37049 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:22:42:727 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:22:43:335 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:22:43:945 -> Measurement result: -7559980 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:25:41:597 -> Executing scheduled measurements for reference preassure: 0
+10:25:41:797 -> Measurement result: 36827 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:25:42:198 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:25:42:799 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:25:43:407 -> Measurement result: -7550718 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:28:41:056 -> Executing scheduled measurements for reference preassure: 0
+10:28:41:269 -> Measurement result: 36685 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:28:41:657 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:28:42:257 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:28:42:866 -> Measurement result: -7541683 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:31:40:516 -> Executing scheduled measurements for reference preassure: 0
+10:31:40:716 -> Measurement result: 36534 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:31:41:117 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:31:41:719 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:31:42:328 -> Measurement result: -7533365 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:34:39:967 -> Executing scheduled measurements for reference preassure: 0
+10:34:40:168 -> Measurement result: 36293 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:34:40:568 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:34:41:178 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:34:41:786 -> Measurement result: -7524168 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:37:39:422 -> Executing scheduled measurements for reference preassure: 0
+10:37:39:622 -> Measurement result: 36150 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:37:40:023 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:37:40:637 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:37:41:246 -> Measurement result: -7516440 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:40:38:876 -> Executing scheduled measurements for reference preassure: 0
+10:40:39:077 -> Measurement result: 36038 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:40:39:478 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:40:40:092 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:40:40:702 -> Measurement result: -7507227 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:43:38:338 -> Executing scheduled measurements for reference preassure: 0
+10:43:38:538 -> Measurement result: 35863 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:43:38:940 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:43:39:547 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:43:40:157 -> Measurement result: -7498841 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:46:37:798 -> Executing scheduled measurements for reference preassure: 0
+10:46:37:999 -> Measurement result: 35618 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:46:38:399 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:46:39:005 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:46:39:614 -> Measurement result: -7490790 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:49:37:268 -> Executing scheduled measurements for reference preassure: 0
+10:49:37:467 -> Measurement result: 35518 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:49:37:868 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:49:38:467 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:49:39:076 -> Measurement result: -7482989 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:52:36:720 -> Executing scheduled measurements for reference preassure: 0
+10:52:36:921 -> Measurement result: 35369 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:52:37:322 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:52:37:927 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:52:38:536 -> Measurement result: -7474668 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:55:36:183 -> Executing scheduled measurements for reference preassure: 0
+10:55:36:384 -> Measurement result: 35190 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:55:36:784 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:55:37:391 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:55:38:000 -> Measurement result: -7466799 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+10:58:35:659 -> Executing scheduled measurements for reference preassure: 0
+10:58:35:859 -> Measurement result: 35016 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+10:58:36:260 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+10:58:36:853 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+10:58:37:462 -> Measurement result: -7459074 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:01:35:134 -> Executing scheduled measurements for reference preassure: 0
+11:01:35:335 -> Measurement result: 34944 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:01:35:736 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:01:36:314 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:01:36:923 -> Measurement result: -7451458 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:04:34:627 -> Executing scheduled measurements for reference preassure: 0
+11:04:34:828 -> Measurement result: 34742 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:04:35:228 -> Measurement result: 30 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:04:35:862 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:04:36:471 -> Measurement result: -7444239 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:07:34:112 -> Executing scheduled measurements for reference preassure: 0
+11:07:34:312 -> Measurement result: 34595 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:07:34:713 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:07:35:329 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:07:35:938 -> Measurement result: -7436586 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:10:33:603 -> Executing scheduled measurements for reference preassure: 0
+11:10:33:803 -> Measurement result: 34492 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:10:34:204 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:10:34:793 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:10:35:401 -> Measurement result: -7429765 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:13:33:093 -> Executing scheduled measurements for reference preassure: 0
+11:13:33:293 -> Measurement result: 34317 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:13:33:694 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:13:34:258 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:13:34:867 -> Measurement result: -7421923 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:16:32:568 -> Executing scheduled measurements for reference preassure: 0
+11:16:32:769 -> Measurement result: 34174 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:16:33:170 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:16:33:807 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:16:34:416 -> Measurement result: -7416224 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:19:32:058 -> Executing scheduled measurements for reference preassure: 0
+11:19:32:258 -> Measurement result: 34035 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:19:32:659 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:19:33:274 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:19:33:883 -> Measurement result: -7408023 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:22:31:528 -> Executing scheduled measurements for reference preassure: 0
+11:22:31:729 -> Measurement result: 33862 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:22:32:130 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:22:32:742 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:22:33:350 -> Measurement result: -7401946 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:25:30:990 -> Executing scheduled measurements for reference preassure: 0
+11:25:31:190 -> Measurement result: 33793 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:25:31:590 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:25:32:222 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:25:32:822 -> Measurement result: -7395265 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:28:30:447 -> Executing scheduled measurements for reference preassure: 0
+11:28:30:647 -> Measurement result: 33629 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:28:31:048 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:28:31:686 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:28:32:295 -> Measurement result: -7387924 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:31:29:907 -> Executing scheduled measurements for reference preassure: 0
+11:31:30:107 -> Measurement result: 33519 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:31:30:508 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:31:31:077 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:31:31:685 -> Measurement result: -7382625 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:34:29:380 -> Executing scheduled measurements for reference preassure: 0
+11:34:29:580 -> Measurement result: 33381 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:34:29:981 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:34:30:552 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:34:31:162 -> Measurement result: -7375756 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:37:28:876 -> Executing scheduled measurements for reference preassure: 0
+11:37:29:075 -> Measurement result: 33248 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:37:29:476 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:37:30:109 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:37:30:718 -> Measurement result: -7369527 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:40:28:370 -> Executing scheduled measurements for reference preassure: 0
+11:40:28:570 -> Measurement result: 33137 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:40:28:972 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:40:29:584 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:40:30:193 -> Measurement result: -7363872 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:43:27:857 -> Executing scheduled measurements for reference preassure: 0
+11:43:28:058 -> Measurement result: 32963 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:43:28:459 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:43:29:064 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:43:29:672 -> Measurement result: -7356732 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:46:27:334 -> Executing scheduled measurements for reference preassure: 0
+11:46:27:534 -> Measurement result: 32897 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:46:27:935 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:46:28:539 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:46:29:148 -> Measurement result: -7350863 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:49:26:816 -> Executing scheduled measurements for reference preassure: 0
+11:49:27:016 -> Measurement result: 32733 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:49:27:417 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:49:28:012 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:49:28:621 -> Measurement result: -7345812 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:52:26:283 -> Executing scheduled measurements for reference preassure: 0
+11:52:26:483 -> Measurement result: 32627 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:52:26:884 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:52:27:488 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:52:28:097 -> Measurement result: -7339155 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:55:25:757 -> Executing scheduled measurements for reference preassure: 0
+11:55:25:957 -> Measurement result: 32525 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:55:26:358 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:55:26:962 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:55:27:571 -> Measurement result: -7334040 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+11:58:25:239 -> Executing scheduled measurements for reference preassure: 0
+11:58:25:440 -> Measurement result: 32423 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+11:58:25:840 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+11:58:26:434 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+11:58:27:043 -> Measurement result: -7328084 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:01:24:707 -> Executing scheduled measurements for reference preassure: 0
+12:01:24:907 -> Measurement result: 32288 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:01:25:308 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:01:25:907 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:01:26:517 -> Measurement result: -7322868 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:04:24:181 -> Executing scheduled measurements for reference preassure: 0
+12:04:24:382 -> Measurement result: 32145 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:04:24:783 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:04:25:384 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:04:25:994 -> Measurement result: -7317209 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:07:23:648 -> Executing scheduled measurements for reference preassure: 0
+12:07:23:849 -> Measurement result: 32047 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:07:24:249 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:07:24:862 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:07:25:472 -> Measurement result: -7311383 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:10:23:099 -> Executing scheduled measurements for reference preassure: 0
+12:10:23:300 -> Measurement result: 31908 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:10:23:700 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:10:24:338 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:10:24:947 -> Measurement result: -7306176 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:13:22:553 -> Executing scheduled measurements for reference preassure: 0
+12:13:22:752 -> Measurement result: 31841 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:13:23:154 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:13:23:734 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:13:24:343 -> Measurement result: -7300788 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:16:22:021 -> Executing scheduled measurements for reference preassure: 0
+12:16:22:221 -> Measurement result: 31672 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:16:22:623 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:16:23:213 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:16:23:822 -> Measurement result: -7295400 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:19:21:496 -> Executing scheduled measurements for reference preassure: 0
+12:19:21:697 -> Measurement result: 31570 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:19:22:098 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:19:22:689 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:19:23:298 -> Measurement result: -7290200 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:22:20:971 -> Executing scheduled measurements for reference preassure: 0
+12:22:21:171 -> Measurement result: 31507 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:22:21:572 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:22:22:164 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:22:22:774 -> Measurement result: -7284914 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:25:20:440 -> Executing scheduled measurements for reference preassure: 0
+12:25:20:633 -> Measurement result: 31366 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:25:21:034 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:25:21:643 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:25:22:251 -> Measurement result: -7280374 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:28:19:896 -> Executing scheduled measurements for reference preassure: 0
+12:28:20:097 -> Measurement result: 31264 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:28:20:497 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:28:21:119 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:28:21:728 -> Measurement result: -7275245 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:31:19:362 -> Executing scheduled measurements for reference preassure: 0
+12:31:19:563 -> Measurement result: 31161 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:31:19:964 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:31:20:598 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:31:21:212 -> Measurement result: -7270682 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:34:18:841 -> Executing scheduled measurements for reference preassure: 0
+12:34:19:042 -> Measurement result: 31095 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:34:19:443 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:34:20:074 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:34:20:682 -> Measurement result: -7265348 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:37:18:286 -> Executing scheduled measurements for reference preassure: 0
+12:37:18:486 -> Measurement result: 30963 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:37:18:887 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:37:19:469 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:37:20:078 -> Measurement result: -7261159 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:40:17:750 -> Executing scheduled measurements for reference preassure: 0
+12:40:17:950 -> Measurement result: 30862 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:40:18:351 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:40:18:952 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:40:19:562 -> Measurement result: -7256389 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:43:17:219 -> Executing scheduled measurements for reference preassure: 0
+12:43:17:420 -> Measurement result: 30758 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:43:17:820 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:43:18:437 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:43:19:046 -> Measurement result: -7252270 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:46:16:688 -> Executing scheduled measurements for reference preassure: 0
+12:46:16:888 -> Measurement result: 30661 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:46:17:289 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:46:17:924 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:46:18:533 -> Measurement result: -7246778 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:49:16:148 -> Executing scheduled measurements for reference preassure: 0
+12:49:16:348 -> Measurement result: 30597 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:49:16:748 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:49:17:328 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:49:17:937 -> Measurement result: -7242984 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:52:15:627 -> Executing scheduled measurements for reference preassure: 0
+12:52:15:828 -> Measurement result: 30493 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:52:16:229 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:52:16:813 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:52:17:422 -> Measurement result: -7238171 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:55:15:115 -> Executing scheduled measurements for reference preassure: 0
+12:55:15:316 -> Measurement result: 30395 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:55:15:717 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:55:16:316 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:55:16:909 -> Measurement result: -7233524 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+12:58:14:602 -> Executing scheduled measurements for reference preassure: 0
+12:58:14:802 -> Measurement result: 30288 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+12:58:15:204 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+12:58:15:788 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+12:58:16:397 -> Measurement result: -7229613 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:01:14:096 -> Executing scheduled measurements for reference preassure: 0
+13:01:14:295 -> Measurement result: 30194 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:01:14:696 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:01:15:273 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:01:15:882 -> Measurement result: -7225020 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:04:13:583 -> Executing scheduled measurements for reference preassure: 0
+13:04:13:783 -> Measurement result: 30127 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:04:14:184 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:04:14:762 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:04:15:371 -> Measurement result: -7221259 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:07:13:070 -> Executing scheduled measurements for reference preassure: 0
+13:07:13:270 -> Measurement result: 30023 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:07:13:671 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:07:14:253 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:07:14:856 -> Measurement result: -7217185 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:10:12:557 -> Executing scheduled measurements for reference preassure: 0
+13:10:12:756 -> Measurement result: 29954 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:10:13:158 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:10:13:731 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:10:14:340 -> Measurement result: -7212661 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:13:12:034 -> Executing scheduled measurements for reference preassure: 0
+13:13:12:235 -> Measurement result: 29858 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:13:12:635 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:13:13:217 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:13:13:826 -> Measurement result: -7208895 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:16:11:511 -> Executing scheduled measurements for reference preassure: 0
+13:16:11:711 -> Measurement result: 29793 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:16:12:112 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:16:12:699 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:16:13:308 -> Measurement result: -7204414 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:19:11:003 -> Executing scheduled measurements for reference preassure: 0
+13:19:11:203 -> Measurement result: 29696 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:19:11:604 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:19:12:181 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:19:12:790 -> Measurement result: -7200988 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:22:10:486 -> Executing scheduled measurements for reference preassure: 0
+13:22:10:687 -> Measurement result: 29593 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:22:11:087 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:22:11:660 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:22:12:278 -> Measurement result: -7196963 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:25:09:943 -> Executing scheduled measurements for reference preassure: 0
+13:25:10:144 -> Measurement result: 29529 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:25:10:544 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:25:11:140 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:25:11:750 -> Measurement result: -7193434 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:28:09:410 -> Executing scheduled measurements for reference preassure: 0
+13:28:09:610 -> Measurement result: 29432 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:28:10:010 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:28:10:621 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:28:11:230 -> Measurement result: -7188700 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:31:08:884 -> Executing scheduled measurements for reference preassure: 0
+13:31:09:084 -> Measurement result: 29393 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:31:09:485 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:31:10:103 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:31:10:712 -> Measurement result: -7185253 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:34:08:370 -> Executing scheduled measurements for reference preassure: 0
+13:34:08:569 -> Measurement result: 29264 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:34:08:970 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:34:09:583 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:34:10:192 -> Measurement result: -7181578 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:37:07:868 -> Executing scheduled measurements for reference preassure: 0
+13:37:08:059 -> Measurement result: 29193 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:37:08:460 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:37:09:066 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:37:09:675 -> Measurement result: -7177858 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:40:07:351 -> Executing scheduled measurements for reference preassure: 0
+13:40:07:552 -> Measurement result: 29093 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:40:07:952 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:40:08:548 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:40:09:157 -> Measurement result: -7174603 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:43:06:860 -> Executing scheduled measurements for reference preassure: 0
+13:43:07:065 -> Measurement result: 29061 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:43:07:461 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:43:08:034 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:43:08:650 -> Measurement result: -7170567 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:46:06:376 -> Executing scheduled measurements for reference preassure: 0
+13:46:06:576 -> Measurement result: 28993 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:46:06:977 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:46:07:598 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:46:08:207 -> Measurement result: -7167139 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:49:05:881 -> Executing scheduled measurements for reference preassure: 0
+13:49:06:082 -> Measurement result: 28897 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:49:06:482 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:49:07:082 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:49:07:691 -> Measurement result: -7163582 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:52:05:351 -> Executing scheduled measurements for reference preassure: 0
+13:52:05:551 -> Measurement result: 28798 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:52:05:952 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:52:06:565 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:52:07:174 -> Measurement result: -7160509 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:55:04:819 -> Executing scheduled measurements for reference preassure: 0
+13:55:05:019 -> Measurement result: 28733 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:55:05:420 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:55:06:049 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:55:06:658 -> Measurement result: -7157142 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+13:58:04:271 -> Executing scheduled measurements for reference preassure: 0
+13:58:04:472 -> Measurement result: 28665 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+13:58:04:873 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+13:58:05:450 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+13:58:06:059 -> Measurement result: -7153349 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:01:03:759 -> Executing scheduled measurements for reference preassure: 0
+14:01:03:959 -> Measurement result: 28634 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:01:04:360 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:01:04:933 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:01:05:542 -> Measurement result: -7150365 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:04:03:239 -> Executing scheduled measurements for reference preassure: 0
+14:04:03:439 -> Measurement result: 28535 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:04:03:840 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:04:04:416 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:04:05:025 -> Measurement result: -7147156 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:07:02:735 -> Executing scheduled measurements for reference preassure: 0
+14:07:02:936 -> Measurement result: 28436 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:07:03:336 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:07:03:900 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:07:04:509 -> Measurement result: -7143677 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:10:02:227 -> Executing scheduled measurements for reference preassure: 0
+14:10:02:427 -> Measurement result: 28402 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:10:02:827 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:10:03:465 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:10:04:093 -> Measurement result: -7140188 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:13:01:727 -> Executing scheduled measurements for reference preassure: 0
+14:13:01:928 -> Measurement result: 28306 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:13:02:328 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:13:02:951 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:13:03:561 -> Measurement result: -7137018 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:16:01:197 -> Executing scheduled measurements for reference preassure: 0
+14:16:01:398 -> Measurement result: 28238 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:16:01:799 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:16:02:437 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:16:03:046 -> Measurement result: -7134017 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:19:00:663 -> Executing scheduled measurements for reference preassure: 0
+14:19:00:864 -> Measurement result: 28170 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:19:01:264 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:19:01:840 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:19:02:450 -> Measurement result: -7130872 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:22:00:127 -> Executing scheduled measurements for reference preassure: 0
+14:22:00:327 -> Measurement result: 28136 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:22:00:728 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:22:01:330 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:22:01:939 -> Measurement result: -7127743 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:24:59:609 -> Executing scheduled measurements for reference preassure: 0
+14:24:59:810 -> Measurement result: 28006 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:25:00:210 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:25:00:826 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:25:01:435 -> Measurement result: -7125009 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:27:59:067 -> Executing scheduled measurements for reference preassure: 0
+14:27:59:267 -> Measurement result: 28003 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:27:59:667 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:28:00:242 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:28:00:850 -> Measurement result: -7121711 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:30:58:524 -> Executing scheduled measurements for reference preassure: 0
+14:30:58:724 -> Measurement result: 27940 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:30:59:124 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:30:59:740 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:31:00:359 -> Measurement result: -7118454 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:33:57:999 -> Executing scheduled measurements for reference preassure: 0
+14:33:58:206 -> Measurement result: 27875 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:33:58:599 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:33:59:237 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:33:59:847 -> Measurement result: -7115791 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:36:57:491 -> Executing scheduled measurements for reference preassure: 0
+14:36:57:691 -> Measurement result: 27777 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:36:58:092 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:36:58:655 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:36:59:264 -> Measurement result: -7113122 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:39:56:973 -> Executing scheduled measurements for reference preassure: 0
+14:39:57:173 -> Measurement result: 27712 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:39:57:573 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:39:58:152 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:39:58:762 -> Measurement result: -7110267 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:42:56:451 -> Executing scheduled measurements for reference preassure: 0
+14:42:56:651 -> Measurement result: 27649 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:42:57:052 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:42:57:651 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:42:58:261 -> Measurement result: -7107094 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:45:55:938 -> Executing scheduled measurements for reference preassure: 0
+14:45:56:139 -> Measurement result: 27581 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:45:56:540 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:45:57:152 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:45:57:761 -> Measurement result: -7104103 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:48:55:430 -> Executing scheduled measurements for reference preassure: 0
+14:48:55:631 -> Measurement result: 27584 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:48:56:032 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:48:56:655 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:48:57:264 -> Measurement result: -7101650 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:51:54:914 -> Executing scheduled measurements for reference preassure: 0
+14:51:55:114 -> Measurement result: 27483 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:51:55:515 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:51:56:079 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:51:56:688 -> Measurement result: -7098714 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:54:54:414 -> Executing scheduled measurements for reference preassure: 0
+14:54:54:615 -> Measurement result: 27418 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:54:55:016 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:54:55:585 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:54:56:193 -> Measurement result: -7096238 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+14:57:53:919 -> Executing scheduled measurements for reference preassure: 0
+14:57:54:119 -> Measurement result: 27353 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+14:57:54:520 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+14:57:55:092 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+14:57:55:700 -> Measurement result: -7093261 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:00:53:410 -> Executing scheduled measurements for reference preassure: 0
+15:00:53:610 -> Measurement result: 27323 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:00:54:011 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:00:54:600 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:00:55:210 -> Measurement result: -7090784 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:03:52:906 -> Executing scheduled measurements for reference preassure: 0
+15:03:53:107 -> Measurement result: 27284 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:03:53:508 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:03:54:109 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:03:54:718 -> Measurement result: -7087696 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:06:52:413 -> Executing scheduled measurements for reference preassure: 0
+15:06:52:614 -> Measurement result: 27201 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:06:53:014 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:06:53:617 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:06:54:225 -> Measurement result: -7085229 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:09:51:914 -> Executing scheduled measurements for reference preassure: 0
+15:09:52:115 -> Measurement result: 27189 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:09:52:515 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:09:53:125 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:09:53:734 -> Measurement result: -7082715 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:12:51:416 -> Executing scheduled measurements for reference preassure: 0
+15:12:51:617 -> Measurement result: 27089 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:12:52:018 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:12:52:628 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:12:53:247 -> Measurement result: -7079898 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:15:50:905 -> Executing scheduled measurements for reference preassure: 0
+15:15:51:105 -> Measurement result: 27056 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:15:51:506 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:15:52:135 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:15:52:743 -> Measurement result: -7077662 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:18:50:386 -> Executing scheduled measurements for reference preassure: 0
+15:18:50:586 -> Measurement result: 27023 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:18:50:987 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:18:51:558 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:18:52:168 -> Measurement result: -7075192 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:21:49:873 -> Executing scheduled measurements for reference preassure: 0
+15:21:50:074 -> Measurement result: 26926 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:21:50:475 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:21:51:060 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:21:51:669 -> Measurement result: -7072488 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:24:49:360 -> Executing scheduled measurements for reference preassure: 0
+15:24:49:560 -> Measurement result: 26894 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:24:49:961 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:24:50:555 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:24:51:164 -> Measurement result: -7069894 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:27:48:856 -> Executing scheduled measurements for reference preassure: 0
+15:27:49:056 -> Measurement result: 26863 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:27:49:457 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:27:50:051 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:27:50:661 -> Measurement result: -7067601 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:30:48:343 -> Executing scheduled measurements for reference preassure: 0
+15:30:48:544 -> Measurement result: 26798 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:30:48:945 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:30:49:547 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:30:50:156 -> Measurement result: -7065041 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:33:47:836 -> Executing scheduled measurements for reference preassure: 0
+15:33:48:036 -> Measurement result: 26735 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:33:48:438 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:33:49:041 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:33:49:650 -> Measurement result: -7062723 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:36:47:325 -> Executing scheduled measurements for reference preassure: 0
+15:36:47:525 -> Measurement result: 26701 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:36:47:926 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:36:48:534 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:36:49:142 -> Measurement result: -7060199 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:39:46:807 -> Executing scheduled measurements for reference preassure: 0
+15:39:47:008 -> Measurement result: 26670 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:39:47:409 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:39:48:026 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:39:48:636 -> Measurement result: -7058116 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:42:46:294 -> Executing scheduled measurements for reference preassure: 0
+15:42:46:495 -> Measurement result: 26605 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:42:46:896 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:42:47:520 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:42:48:129 -> Measurement result: -7055549 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:45:45:793 -> Executing scheduled measurements for reference preassure: 0
+15:45:45:993 -> Measurement result: 26571 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:45:46:393 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:45:47:017 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:45:47:626 -> Measurement result: -7053401 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:48:45:291 -> Executing scheduled measurements for reference preassure: 0
+15:48:45:491 -> Measurement result: 26508 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:48:45:892 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:48:46:512 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:48:47:120 -> Measurement result: -7050929 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:51:44:798 -> Executing scheduled measurements for reference preassure: 0
+15:51:44:998 -> Measurement result: 26474 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:51:45:399 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:51:46:009 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:51:46:618 -> Measurement result: -7048759 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:54:44:309 -> Executing scheduled measurements for reference preassure: 0
+15:54:44:509 -> Measurement result: 26477 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:54:44:910 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:54:45:506 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:54:46:115 -> Measurement result: -7046811 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+15:57:43:813 -> Executing scheduled measurements for reference preassure: 0
+15:57:44:013 -> Measurement result: 26377 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+15:57:44:414 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+15:57:45:005 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+15:57:45:615 -> Measurement result: -7044566 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:00:43:326 -> Executing scheduled measurements for reference preassure: 0
+16:00:43:526 -> Measurement result: 26343 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:00:43:927 -> Measurement result: 29 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:00:44:508 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:00:45:116 -> Measurement result: -7042212 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:03:42:832 -> Executing scheduled measurements for reference preassure: 0
+16:03:43:033 -> Measurement result: 26278 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:03:43:434 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:03:44:006 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:03:44:616 -> Measurement result: -7039987 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:06:42:329 -> Executing scheduled measurements for reference preassure: 0
+16:06:42:528 -> Measurement result: 26247 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:06:42:929 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:06:43:504 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:06:44:113 -> Measurement result: -7037621 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:09:41:829 -> Executing scheduled measurements for reference preassure: 0
+16:09:42:029 -> Measurement result: 26213 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:09:42:431 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:09:43:003 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:09:43:612 -> Measurement result: -7035996 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:12:41:328 -> Executing scheduled measurements for reference preassure: 0
+16:12:41:528 -> Measurement result: 26147 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:12:41:929 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:12:42:501 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:12:43:110 -> Measurement result: -7033411 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:15:40:838 -> Executing scheduled measurements for reference preassure: 0
+16:15:41:038 -> Measurement result: 26082 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:15:41:438 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:15:42:003 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:15:42:612 -> Measurement result: -7031525 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:18:40:343 -> Executing scheduled measurements for reference preassure: 0
+16:18:40:543 -> Measurement result: 26082 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:18:40:945 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:18:41:588 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:18:42:197 -> Measurement result: -7029992 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:21:39:859 -> Executing scheduled measurements for reference preassure: 0
+16:21:40:059 -> Measurement result: 26048 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:21:40:460 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:21:41:089 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:21:41:698 -> Measurement result: -7028319 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:24:39:393 -> Executing scheduled measurements for reference preassure: 0
+16:24:39:593 -> Measurement result: 25983 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:24:39:994 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:24:40:590 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:24:41:199 -> Measurement result: -7026679 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:27:38:909 -> Executing scheduled measurements for reference preassure: 0
+16:27:39:109 -> Measurement result: 25953 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:27:39:510 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:27:40:083 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:27:40:692 -> Measurement result: -7025374 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:30:38:445 -> Executing scheduled measurements for reference preassure: 0
+16:30:38:645 -> Measurement result: 25921 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:30:39:046 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:30:39:658 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:30:40:267 -> Measurement result: -7023201 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:33:37:963 -> Executing scheduled measurements for reference preassure: 0
+16:33:38:164 -> Measurement result: 25921 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:33:38:564 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:33:39:148 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:33:39:757 -> Measurement result: -7021262 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:36:37:465 -> Executing scheduled measurements for reference preassure: 0
+16:36:37:665 -> Measurement result: 25826 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:36:38:066 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:36:38:635 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:36:39:243 -> Measurement result: -7019930 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:39:36:951 -> Executing scheduled measurements for reference preassure: 0
+16:39:37:152 -> Measurement result: 25826 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:39:37:553 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:39:38:123 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:39:38:733 -> Measurement result: -7018529 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:42:36:443 -> Executing scheduled measurements for reference preassure: 0
+16:42:36:643 -> Measurement result: 25826 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:42:37:044 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:42:37:609 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:42:38:218 -> Measurement result: -7016543 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:45:35:942 -> Executing scheduled measurements for reference preassure: 0
+16:45:36:142 -> Measurement result: 25760 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:45:36:543 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:45:37:177 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:45:37:786 -> Measurement result: -7014766 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:48:35:438 -> Executing scheduled measurements for reference preassure: 0
+16:48:35:638 -> Measurement result: 25730 for configuration: interface:adc temperature, parameters:0, 0, 10, 
+ 16, 2, 16:48:36:039 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:48:36:661 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:48:37:270 -> Measurement result: -7013099 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:51:34:949 -> Executing scheduled measurements for reference preassure: 0
+16:51:35:149 -> Measurement result: 25698 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:51:35:550 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:51:36:146 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:51:36:754 -> Measurement result: -7011465 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:54:34:464 -> Executing scheduled measurements for reference preassure: 0
+16:54:34:665 -> Measurement result: 25665 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:54:35:066 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:54:35:630 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:54:36:239 -> Measurement result: -7009880 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+16:57:33:971 -> Executing scheduled measurements for reference preassure: 0
+16:57:34:173 -> Measurement result: 25633 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+16:57:34:573 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+16:57:35:198 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+16:57:35:807 -> Measurement result: -7008076 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:00:33:505 -> Executing scheduled measurements for reference preassure: 0
+17:00:33:704 -> Measurement result: 25570 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:00:34:105 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:00:34:682 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:00:35:292 -> Measurement result: -7005107 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:03:32:977 -> Executing scheduled measurements for reference preassure: 0
+17:03:33:178 -> Measurement result: 25538 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:03:33:579 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:03:34:164 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:03:34:773 -> Measurement result: -7003521 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:06:32:473 -> Executing scheduled measurements for reference preassure: 0
+17:06:32:673 -> Measurement result: 25505 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:06:33:074 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:06:33:647 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:06:34:256 -> Measurement result: -7002273 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:09:31:961 -> Executing scheduled measurements for reference preassure: 0
+17:09:32:161 -> Measurement result: 25472 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:09:32:562 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:09:33:128 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:09:33:737 -> Measurement result: -7000829 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:12:31:453 -> Executing scheduled measurements for reference preassure: 0
+17:12:31:654 -> Measurement result: 25440 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:12:32:055 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:12:32:693 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:12:33:302 -> Measurement result: -7000033 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:15:30:944 -> Executing scheduled measurements for reference preassure: 0
+17:15:31:144 -> Measurement result: 25407 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:15:31:545 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:15:32:172 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:15:32:782 -> Measurement result: -6998484 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:18:30:431 -> Executing scheduled measurements for reference preassure: 0
+17:18:30:631 -> Measurement result: 25407 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:18:31:032 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:18:31:628 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:18:32:237 -> Measurement result: -6997042 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:21:29:923 -> Executing scheduled measurements for reference preassure: 0
+17:21:30:124 -> Measurement result: 25375 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:21:30:526 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:21:31:157 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:21:31:766 -> Measurement result: -6995202 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:24:29:406 -> Executing scheduled measurements for reference preassure: 0
+17:24:29:607 -> Measurement result: 25342 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:24:30:007 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:24:30:603 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:24:31:212 -> Measurement result: -6993932 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:27:28:887 -> Executing scheduled measurements for reference preassure: 0
+17:27:29:087 -> Measurement result: 25279 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:27:29:488 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:27:30:125 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:27:30:734 -> Measurement result: -6992177 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:30:28:360 -> Executing scheduled measurements for reference preassure: 0
+17:30:28:561 -> Measurement result: 25247 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:30:28:961 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:30:29:559 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:30:30:168 -> Measurement result: -6990975 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:33:27:840 -> Executing scheduled measurements for reference preassure: 0
+17:33:28:041 -> Measurement result: 25247 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:33:28:442 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:33:29:078 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:33:29:686 -> Measurement result: -6989456 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:36:27:323 -> Executing scheduled measurements for reference preassure: 0
+17:36:27:524 -> Measurement result: 25214 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:36:27:924 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:36:28:509 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:36:29:117 -> Measurement result: -6988285 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:39:26:797 -> Executing scheduled measurements for reference preassure: 0
+17:39:26:996 -> Measurement result: 25214 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:39:27:397 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:39:28:020 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:39:28:628 -> Measurement result: -6986856 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:42:26:290 -> Executing scheduled measurements for reference preassure: 0
+17:42:26:490 -> Measurement result: 25149 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:42:26:891 -> Measurement result: 28 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:42:27:532 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:42:28:141 -> Measurement result: -6984869 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:45:25:757 -> Executing scheduled measurements for reference preassure: 0
+17:45:25:958 -> Measurement result: 25116 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:45:26:358 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:45:26:962 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:45:27:572 -> Measurement result: -6983283 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:48:25:256 -> Executing scheduled measurements for reference preassure: 0
+17:48:25:456 -> Measurement result: 25116 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:48:25:857 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:48:26:474 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:48:27:083 -> Measurement result: -6981131 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:51:24:759 -> Executing scheduled measurements for reference preassure: 0
+17:51:24:959 -> Measurement result: 25084 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:51:25:360 -> Measurement result: 26 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:51:25:993 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:51:26:602 -> Measurement result: -6981547 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:54:24:261 -> Executing scheduled measurements for reference preassure: 0
+17:54:24:461 -> Measurement result: 25051 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:54:24:861 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:54:25:427 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:54:26:037 -> Measurement result: -6979830 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+17:57:23:780 -> Executing scheduled measurements for reference preassure: 0
+17:57:24:002 -> Measurement result: 25019 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+17:57:24:380 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+17:57:25:021 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+17:57:25:629 -> Measurement result: -6978611 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+18:00:23:313 -> Executing scheduled measurements for reference preassure: 0
+18:00:23:515 -> Measurement result: 25019 for configuration: interface:adc temperature, parameters: 16, 2, 0, 0, 10, 
+18:00:23:915 -> Measurement result: 27 for configuration: interface:adc_opamp, parameters: 10, 1, 1, 1, 0, 
+18:00:24:529 -> Measurement result: -8388608 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 0, 
+18:00:25:139 -> Measurement result: -6977359 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
