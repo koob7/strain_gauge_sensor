@@ -1,6 +1,8 @@
 drugi test rono
-butla nabita do 4 bar
+butla nabita do 3 bar spadła do 2
 
+08:52:57:926 -> Executing scheduled measurements for reference preassure: 43693
+08:53:04:226 -> Measurement result: -7824800 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
 08:55:57:481 -> Executing scheduled measurements for reference preassure: 43426
 08:55:59:319 -> Measurement result: -7882696 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
 08:58:57:008 -> Executing scheduled measurements for reference preassure: 43056
