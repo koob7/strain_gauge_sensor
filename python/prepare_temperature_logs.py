@@ -2,8 +2,9 @@ import os
 from pathlib import Path
 import re
 
-INPUT_DIR = Path("../temperature_logs")
-OUTPUT_DIR = Path("../ready_logs")
+BASE_DIR = Path(__file__).resolve().parent.parent
+INPUT_DIR = BASE_DIR / "tmp"
+OUTPUT_DIR = BASE_DIR / "ready_logs"
 
 def process_file(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as f:
@@ -61,6 +62,9 @@ def process_file(input_path, output_path):
 
 
 def main():
+    if not INPUT_DIR.is_dir():
+        raise FileNotFoundError(f"Input directory does not exist: {INPUT_DIR}")
+
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     for filename in os.listdir(INPUT_DIR):

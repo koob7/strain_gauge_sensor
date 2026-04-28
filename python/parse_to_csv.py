@@ -9,9 +9,13 @@ from bokeh.models import Range1d, WheelZoomTool, BoxZoomTool
 
 
 # foldery
-input_folder = Path("../ready_logs")
-csv_folder = Path("../csv")
-chart_folder = Path("../chart")
+BASE_DIR = Path(__file__).resolve().parent.parent
+input_folder = BASE_DIR / "ready_logs"
+csv_folder = BASE_DIR / "csv"
+chart_folder = BASE_DIR / "chart"
+
+if not input_folder.is_dir():
+    raise FileNotFoundError(f"Input directory does not exist: {input_folder}")
 
 csv_folder.mkdir(parents=True, exist_ok=True)
 chart_folder.mkdir(parents=True, exist_ok=True)
