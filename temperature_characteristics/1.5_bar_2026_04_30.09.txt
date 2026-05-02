@@ -1,0 +1,282 @@
+ciśnienie w butli stabilizowane na 1.5 bar
+
+Executing scheduled measurements for reference preassure: 43494
+Measurement result: -4824922 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 43295
+Measurement result: -4903664 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 43056
+Measurement result: -4888482 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 42747
+Measurement result: -4903023 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 42554
+Measurement result: -4898380 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 42241
+Measurement result: -4893789 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 42093
+Measurement result: -4889227 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 41710
+Measurement result: -4884665 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 41431
+Measurement result: -4881911 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 41278
+Measurement result: -4878473 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 41005
+Measurement result: -4876106 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 40857
+Measurement result: -4871427 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 40593
+Measurement result: -4869158 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 40401
+Measurement result: -4867118 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 40182
+Measurement result: -4863603 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 39770
+Measurement result: -4861578 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 39741
+Measurement result: -4860593 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 39463
+Measurement result: -4858665 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 39160
+Measurement result: -4858546 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 38948
+Measurement result: -4858636 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 38682
+Measurement result: -4858349 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 38537
+Measurement result: -4857334 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 38289
+Measurement result: -4856548 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 38130
+Measurement result: -4855381 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 37838
+Measurement result: -4854725 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 37695
+Measurement result: -4853556 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 37515
+Measurement result: -4851975 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 37304
+Measurement result: -4850660 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 37085
+Measurement result: -4849551 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 36900
+Measurement result: -4848473 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 36685
+Measurement result: -4846974 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 36551
+Measurement result: -4845567 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 36400
+Measurement result: -4844401 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 36293
+Measurement result: -4843031 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 36038
+Measurement result: -4841905 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 35863
+Measurement result: -4840775 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 35721
+Measurement result: -4839848 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 35481
+Measurement result: -4838348 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 35406
+Measurement result: -4837373 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 35273
+Measurement result: -4836063 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 35049
+Measurement result: -4834942 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 34948
+Measurement result: -4834423 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 34761
+Measurement result: -4833744 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 34595
+Measurement result: -4833510 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 34456
+Measurement result: -4832515 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 34281
+Measurement result: -4831719 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 34142
+Measurement result: -4831126 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33969
+Measurement result: -4830637 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33862
+Measurement result: -4830288 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33656
+Measurement result: -4829583 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33553
+Measurement result: -4829271 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33416
+Measurement result: -4829141 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33248
+Measurement result: -4828783 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33137
+Measurement result: -4828182 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 33030
+Measurement result: -4828226 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32861
+Measurement result: -4827922 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32791
+Measurement result: -4827170 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32660
+Measurement result: -4826510 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32489
+Measurement result: -4825700 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32317
+Measurement result: -4825097 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32284
+Measurement result: -4824724 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32186
+Measurement result: -4824094 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 32007
+Measurement result: -4823314 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31940
+Measurement result: -4822717 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31771
+Measurement result: -4822397 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31672
+Measurement result: -4821657 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31570
+Measurement result: -4821066 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31468
+Measurement result: -4820446 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31334
+Measurement result: -4820147 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31235
+Measurement result: -4819792 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 31098
+Measurement result: -4819417 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30956
+Measurement result: -4819517 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30859
+Measurement result: -4819164 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30791
+Measurement result: -4818960 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30664
+Measurement result: -4818868 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30526
+Measurement result: -4818737 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30493
+Measurement result: -4818621 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30392
+Measurement result: -4818139 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30328
+Measurement result: -4817808 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30191
+Measurement result: -4817517 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 30124
+Measurement result: -4817297 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29990
+Measurement result: -4816201 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29954
+Measurement result: -4816125 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29864
+Measurement result: -4816093 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29729
+Measurement result: -4815582 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29661
+Measurement result: -4815402 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29561
+Measurement result: -4815187 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29529
+Measurement result: -4814821 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29429
+Measurement result: -4814952 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29329
+Measurement result: -4814483 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29261
+Measurement result: -4814238 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29164
+Measurement result: -4814068 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 29093
+Measurement result: -4814063 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28993
+Measurement result: -4813790 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28928
+Measurement result: -4813571 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28863
+Measurement result: -4813481 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28798
+Measurement result: -4813213 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28699
+Measurement result: -4813076 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28665
+Measurement result: -4813139 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28569
+Measurement result: -4812839 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28470
+Measurement result: -4812465 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28433
+Measurement result: -4812513 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28371
+Measurement result: -4812290 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28272
+Measurement result: -4812408 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28238
+Measurement result: -4812319 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28170
+Measurement result: -4812466 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28105
+Measurement result: -4812203 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28037
+Measurement result: -4812198 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 28006
+Measurement result: -4812259 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27940
+Measurement result: -4812406 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27875
+Measurement result: -4812083 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27777
+Measurement result: -4811838 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27712
+Measurement result: -4811655 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27679
+Measurement result: -4811488 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27584
+Measurement result: -4811531 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27581
+Measurement result: -4811559 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27516
+Measurement result: -4811598 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27451
+Measurement result: -4811318 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27421
+Measurement result: -4811096 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27320
+Measurement result: -4811053 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27287
+Measurement result: -4811015 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27222
+Measurement result: -4810998 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27189
+Measurement result: -4810879 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27157
+Measurement result: -4810987 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 27056
+Measurement result: -4810695 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26991
+Measurement result: -4810944 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26957
+Measurement result: -4814334 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26926
+Measurement result: -4814591 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26863
+Measurement result: -4814653 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26832
+Measurement result: -4814600 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26767
+Measurement result: -4814843 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26701
+Measurement result: -4813274 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26701
+Measurement result: -4813681 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26636
+Measurement result: -4813219 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26605
+Measurement result: -4812965 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26508
+Measurement result: -4813281 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26508
+Measurement result: -4813500 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26443
+Measurement result: -4813526 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26346
+Measurement result: -4814003 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1, 
+Executing scheduled measurements for reference preassure: 26278
+Measurement result: -4814195 for configuration: interface:hx711, parameters: 10, 1, 1, 1, 1,

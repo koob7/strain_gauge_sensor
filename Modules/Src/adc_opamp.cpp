@@ -29,12 +29,6 @@ bool adc_opamp_t::low_level_configuration(uint8_t param)
     result |= as_int(HAL_OPAMP_Init(&hopamp1));
     result |= as_int(HAL_OPAMP_Init(&hopamp2));
 
-    uint32_t start = HAL_GetTick();
-
-    while ((HAL_GetTick() - start) <= MULTIPLEKSER_VOLTAGE_STABLIZATION_TIME)
-    {
-    };
-
     // HAL_OPAMP_SelfCalibrate(&hopamp1); // If `OPAINTOEN` is enabled, disable it before calling this function
     return result == as_int(HAL_StatusTypeDef::HAL_OK);
 }
